@@ -6,7 +6,7 @@ body {
   /* background-color: #fff; */
   padding: 50px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #727272;
+  color: black;
   font-weight: 400;
 }
 
@@ -16,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #222;
+  color: black;
   margin: 0 0 20px;
 }
 
@@ -39,17 +39,6 @@ h1 {
   font-size: 28px;
 }
 
-h2 {
-  color: #393939;
-}
-
-h3,
-h4,
-h5,
-h6 {
-  color: #494949;
-}
-
 a {
   color: #39c;
   text-decoration: none;
@@ -57,6 +46,7 @@ a {
 
 a:hover {
   color: #069;
+  text-decoration: underline;
 }
 
 a small {
@@ -385,6 +375,14 @@ screen and (max-width: 480px) {
   padding-right: 13px;
 }
 
+.tocbox {
+  width: min-content;
+  background-color: rgb(236, 236, 236);
+}
+
+.tocbox li {
+  padding-right: 2px;
+}
 
 /* 
   dark mode
@@ -396,5 +394,9 @@ screen and (max-width: 480px) {
 
 /* disable dark mode on images */
 body.darkmode--activated img, body.darkmode--activated .darkmode-ignore {
+  mix-blend-mode: difference;
+}
+
+.darkmode--activated a {
   mix-blend-mode: difference;
 }
