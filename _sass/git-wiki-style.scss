@@ -3,10 +3,10 @@
 @import "w3.scss";
 
 body {
-  /* background-color: #fff; */
+  background-color: #0F0F0F;
   padding: 50px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: black;
+  color: white;
   font-weight: 400;
 }
 
@@ -16,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: black;
+  color: white;
   margin: 0 0 20px;
 }
 
@@ -125,7 +125,6 @@ img {
   width: 100%;
   border-bottom: 1px solid;
   border-radius: 10px;
-  // z-index: 999; // it breaks the dark mode
 }
 
 #git-wiki-sidebar {
@@ -375,28 +374,56 @@ screen and (max-width: 480px) {
   padding-right: 13px;
 }
 
+.w3-sidebar {
+  background-color: #0F0F0F;
+}
+
 .tocbox {
+  padding: 8px;
+  background-color: #1e1e1e;
+  border: 1px solid #181818;
+  margin-bottom: 10px;
+  width: fit-content;
+}
+
+.tocbox-text {
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+.tocbox-button {
+  margin-bottom: 0;
+  display: inline-block;
+  text-align: right;
+  font-size: 85%;
+}
+
+.tocbox-button-bit {
+  margin-bottom: 0;
+  display: inline-block;
+  text-align: right;
+  font-size: 85%;
+  color: #39c;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 0px;
+}
+
+.tocbox-button-bit:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+.tocbox-content {
   width: min-content;
-  background-color: rgb(236, 236, 236);
 }
 
 .tocbox li {
   padding-right: 2px;
 }
 
-/* 
-  dark mode
-  https://darkmodejs.learn.uno/#debug 
-*/
-.darkmode-layer, .darkmode-toggle {
-  z-index: 500;
-}
-
-/* disable dark mode on images */
-body.darkmode--activated img, body.darkmode--activated .darkmode-ignore {
-  mix-blend-mode: difference;
-}
-
-.darkmode--activated a {
-  mix-blend-mode: difference;
+.tocbox ol {
+  margin-bottom: 5px;
 }
