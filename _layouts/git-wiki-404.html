@@ -5,26 +5,31 @@ is_wiki_page: false
 ---
 
 {% include git-wiki/defines/defines.html %}
-{% include git-wiki/sections/head/styles.html %}
 
-{% if site.disable_edit != true %}
-<script type="text/javascript">
-    var filename = window.location.pathname.split('/').pop();
-    if (!filename.endsWith(".md"))
-        filename+=".md";
-
-    var url = '{{ site.github.repository_url }}/new/{{site.git_branch | escape}}?filename={{ site.wiki_folder | default: 'wiki' }}/'+filename;
-    window.location=url;
-</script>
-{% else %}
-
-<div style="text-align:center;">
-    <h1 style="text-align:center;font-size:1000%;font-weight:bold;">404</h1>
-    <h2 style="margin-bottom:10px;">This page doesn't exist</h2><p style="font-size:60%;margin-bottom:40px;">yet</p>
-
-    <a href="javascript:history.back()"><img src="/assets/images/maxwell.gif" title="Take me back!"></a>
-</div>
-
-{% endif %}
-
-{% include git-wiki/sections/footer/footer.html %}
+<!doctype html>
+<html>
+    {% include git-wiki/sections/head/head.html %}
+    <body>
+        {% if site.disable_edit != true %}
+        <script type="text/javascript">
+            var filename = window.location.pathname.split('/').pop();
+            if (!filename.endsWith(".md"))
+                filename+=".md";
+        
+            var url = '{{ site.github.repository_url }}/new/{{site.git_branch | escape}}?filename={{ site.wiki_folder | default: 'wiki' }}/'+filename;
+            window.location=url;
+        </script>
+        {% else %}
+    
+        <div style="text-align:center;">
+            <h1 style="text-align:center;font-size:1000%;font-weight:bold;">404</h1>
+            <h2 style="margin-bottom:10px;">This page doesn't exist</h2><p style="font-size:60%;margin-bottom:40px;">yet</p>
+        
+            <a href="javascript:history.back()"><img src="/assets/images/maxwell.gif" title="Take me back!"></a>
+        </div>
+    
+        {% endif %}
+    
+        {% include git-wiki/sections/footer/footer.html %}
+    </body>
+</html>
