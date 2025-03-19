@@ -5,7 +5,7 @@
 body {
   background-color: #0F0F0F;
   padding: 50px;
-  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 14px/1.5 Arial, "Noto Sans", "Helvetica Neue", Helvetica, sans-serif;
   color: white;
   font-weight: 400;
 }
@@ -17,7 +17,20 @@ h4,
 h5,
 h6 {
   color: white;
-  margin: 0 0 20px;
+  margin: 0 0 10px;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  margin: 7px 0 7px;
+}
+
+h4,
+h5,
+h6 {
+  margin: 0 0 0;
 }
 
 p,
@@ -29,14 +42,15 @@ dl {
   margin: 0 0 20px;
 }
 
+p {
+  margin: 0;
+  line-height: 1.6;
+};
+
 h1,
 h2,
 h3 {
   line-height: 1.1;
-}
-
-h1 {
-  font-size: 28px;
 }
 
 a {
@@ -201,7 +215,6 @@ screen and (max-width: 992px) {
 }
 
 strong {
-  color: #222;
   font-weight: 700;
 }
 
@@ -377,11 +390,85 @@ screen and (max-width: 480px) {
   background-color: #0F0F0F;
 }
 
+#git-wiki-content ul {
+  margin-bottom: 0;
+};
+
+#git-wiki-title {
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+
+#git-wiki-content h1,h2,h3,h4,h5,h6 {
+  font-weight: 600;
+  margin-top: 10px;
+};
+
+#git-wiki-content h1 {
+  font-size: 30px;
+  padding-bottom: 8px;
+  margin: 10px 0 10px 0;
+  border-bottom: 1px solid white;
+}
+#git-wiki-content h2 {
+  font-size: 24px;
+  margin: 8px 0 5px 0;
+}
+#git-wiki-content h3 {
+  font-size: 20px;
+}
+#git-wiki-content h4 {
+  font-size: 16px;
+}
+#git-wiki-content h5 {
+  font-size: 15px;
+}
+#git-wiki-content h6 {
+  font-size: 14px;
+}
+
+#git-wiki-content table {
+  border: 1px solid white;
+  margin-top: 20px;
+}
+
+#git-wiki-content th, td {
+  border: 1px solid white;
+  text-align: center;
+}
+
+#git-wiki-content th {
+  color: white;
+}
+
+#git-wiki-content table.blood-type-table  {
+  width: auto;
+}
+
+#git-wiki-content td.blood-type-table {
+  width: 33px;
+  height: 33px;
+  padding: 3px;
+}
+
+#git-wiki-content th.blood-type-table {
+  padding: 2px;
+}
+
+#git-wiki-content table.medication-table  {
+  width: fit-content;
+}
+
+#git-wiki-content td.medication-table  {
+  text-align: left;
+}
+
 .tocbox {
   padding: 8px;
   background-color: #1e1e1e;
   border: 1px solid #181818;
-  margin-bottom: 10px;
+  margin-top: 10px;
   width: fit-content;
 }
 
@@ -427,5 +514,9 @@ screen and (max-width: 480px) {
 
 .tocbox ol {
   padding-left: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
+}
+
+.hide-link:hover {
+  text-decoration: none;
 }
