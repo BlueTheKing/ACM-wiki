@@ -142,7 +142,7 @@ Diagnose action usable on unconscious patients to determine breathing state.
 ## Stethoscope Auscultation
 Active diagnose action used to listen to patient lung and heart sounds.
 
-<img src="/wiki/image/auscultation_sites.png" height="600">
+<img src="{{ '/wiki/image/auscultation_sites.png' | relative_url }}" height="600"> 
 
 May be used to identify developing pneumothorax, tension pneumothorax and hemothorax, or to listen and measure respiratory rate or heart rate.
 
@@ -619,7 +619,7 @@ Effective Blood Volume = Blood volume capable of carrying oxygen
 ### Fluid Transfusion
 The Transfusion Menu allows connecting new fluid bags and managing pre-existing ones.
 
-<img src="/wiki/image/transfusion_menu_diagram.png" height="600">
+<img src="{{ '/wiki/image/transfusion_menu_diagram.png' | relative_url }}" height="600">
 
 **Available Fluid Bag List**
 - Lists available fluid bags in the target inventory
@@ -650,7 +650,7 @@ Fresh whole blood bags will lose their benefits the longer they are kept out, so
 To perform a field blood transfusion a Field Blood Transfusion Kit should be connected to the donor like a regular fluid bag, it must be connected to an IV.
 When connected the Field Blood Transfusion Kit will fill up to its designated volume.
 
-<img src="/wiki/image/FBTK_filled.png" width="280">
+<img src="{{ '/wiki/image/FBTK_filled.png' | relative_url }}" width="280">
 
 Once the Field Blood Transfusion Kit is full it can be disconnected and used as a Fresh Whole Blood Bag.
 
@@ -854,19 +854,19 @@ The AED allows displaying of cardiac rhythms when the pads are connected, the el
 {:.no_toc}
 
 <center>
-<img src="/wiki/image/ekg_sinus.png" height="100">
+<img src="{{ '/wiki/image/ekg_sinus.png' | relative_url }}" height="100">
 <br>
 Sinus
 <br>
-<img src="/wiki/image/ekg_pvt.png" height="100">
+<img src="{{ '/wiki/image/ekg_pvt.png' | relative_url }}" height="100">
 <br>
-Ventricular Tachycardia
+Pulseless Ventricular Tachycardia
 <br>
-<img src="/wiki/image/ekg_vf.png" height="100">
+<img src="{{ '/wiki/image/ekg_vf.png' | relative_url }}" height="100">
 <br>
 Ventricular Fibrillation
 <br>
-<img src="/wiki/image/ekg_asystole.png" height="100">
+<img src="{{ '/wiki/image/ekg_asystole.png' | relative_url }}" height="100">
 <br>
 Asystole
 </center>
@@ -897,7 +897,7 @@ If no AED is available CPR should be performed as soon as possible.
 The AED can be used in AED mode in which it will automatically analyze and shock as required, with audio prompts to signal when to start CPR.
 
 <center>
-<img src="/wiki/image/cardiac_arrest_treatment_diagram.png" width="1100">
+<img src="{{ '/wiki/image/cardiac_arrest_treatment_diagram.png' | relative_url }}" width="1100">
 </center>
 
 ROSC chance is based on CPR consistency, medication, recent shocks, patient blood volume and the medic's traits.
@@ -929,13 +929,13 @@ To be able to convert a player casualty these requirements need to be met:
 
 If met, the medic can perform the conversion, after completion this action will use a casualty ticket.
 
-<img src="/wiki/image/convert_action.png" width="550">
+<img src="{{ '/wiki/image/convert_action.png' | relative_url }}" width="550">
 
 ### Casualty Evacuation
 {:.no_toc}
 Carried casualties can be evacuated on the defined interaction object, this will return the claimed casualty ticket.
 
-<img src="/wiki/image/evacuate_action.png" width="550">
+<img src="{{ '/wiki/image/evacuate_action.png' | relative_url }}" width="550">
 
 # Treatment Reference
 ## Catastrophic Bleeding
