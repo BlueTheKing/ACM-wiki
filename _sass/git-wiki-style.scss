@@ -142,7 +142,7 @@ img {
 }
 
 #git-wiki-sidebar {
-  width: 280px !important;
+  width: 200px !important;
   float: left;
   position: relative !important;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -168,7 +168,7 @@ screen and (max-width: 992px) {
 }
 
 .git-wiki-main-logo {
-  max-width: 270px;
+  max-width: 200px;
 }
 
 #git-wiki-sidebar .git-wiki-downloads {
@@ -232,7 +232,7 @@ strong {
 .git-wiki-page {
   /*width:500px;
   float:right;*/
-  padding-left: 320px;
+  padding-left: 240px;
   padding-bottom: 50px;
 }
 
