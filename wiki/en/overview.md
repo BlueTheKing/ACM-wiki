@@ -497,7 +497,7 @@ Syringes
         <td>8x</td>
         <td class="medication-table">1-5 uses</td>
         <td><3s</td>
-        <td><2m</td>
+        <td><90s</td>
         <td>~4m</td>
         <td>-</td>
         <td></td>
