@@ -517,6 +517,14 @@ screen and (max-width: 480px) {
   margin-bottom: 0px;
 }
 
+pre,
+code {
+  font-family: "Courier New";
+  color: white;
+  background-color: black;
+  padding: 5px;
+}
+
 .hide-link:hover {
   text-decoration: none;
 }
