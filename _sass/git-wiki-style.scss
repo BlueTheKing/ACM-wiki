@@ -528,3 +528,79 @@ code {
 .hide-link:hover {
   text-decoration: none;
 }
+
+table.infobox {
+  align: right;
+  width: 15%;
+};
+
+.infobox > * > * > td {
+  padding: 5px;
+};
+
+table.infobox-inline-table {
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  border: 0 !important;
+  box-sizing: border-box;
+};
+
+.infobox-header > td {
+  font-size: 20px;
+  font-weight: bold;
+};
+
+.infobox-row > td {
+  width: fit-content;
+};
+
+.infobox-row-title {
+  text-align: left;
+  font-weight: bold;
+  width: fit-content;
+  white-space: nowrap;
+};
+
+.infobox-row-title-itable {
+  text-align: left;
+  font-weight: bold;
+  width: fit-content;
+  white-space: nowrap;
+  border: 0;
+  border-right: 1px solid white;
+  border-top: 1px solid white;
+};
+
+.infobox-row-title-itable-f {
+  text-align: left;
+  font-weight: bold;
+  width: fit-content;
+  white-space: nowrap;
+  border: 0;
+  border-right: 1px solid white;
+};
+
+.infobox-row-itable {
+  border: 0;
+  border-top: 1px solid white;
+};
+
+.infobox-row-itable-f {
+  border: 0;
+};
+
+.infobox-selection-img {
+  width: 50%;
+  float: left;
+};
+
+.infobox-selection-text {
+  width: 50%;
+  height: 60px;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+};

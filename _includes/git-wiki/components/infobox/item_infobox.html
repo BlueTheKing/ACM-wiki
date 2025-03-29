@@ -1,0 +1,277 @@
+{% comment %}
+{% include git-wiki/components/infobox/item_infobox.html %}
+
+export_use: string
+export_doserange: string
+
+infobox_image: "/wiki/image/xyz.png"
+
+infobox_use_category: airway/advanced/medication/bandage
+infobox_use_selection: head/arms/limbs/torso/body/all
+infobox_item_usecount 0/1/>2
+
+infobox_item_weight: string, kg / lb
+
+infobox_item_classname: string
+
+infobox_vial_type: string, "Ampule" for dimercaprol
+
+infobox_vial_size: int
+infobox_vial_contents: int
+infobox_vial_contents_micro: bool, use mcg instead of mg
+
+infobox_med_dose: string
+infobox_med_dose_multi: bool, different doses based on use case
+infobox_med_dose_checknote: bool, check dose section
+
+infobox_med_iv: bool
+infobox_med_iv_onset: string
+infobox_med_iv_peak:  string
+infobox_med_iv_duration:  string
+
+infobox_med_im: bool
+infobox_med_im_onset: string
+infobox_med_im_peak: string
+infobox_med_im_duration: string
+
+infobox_med_effect_hr: string
+infobox_med_effect_hr_route: string, use if effect specific to route
+infobox_med_effect_bp: string
+infobox_med_effect_bp_route: string, use if effect specific to route
+infobox_med_effect_rr: string
+infobox_med_effect_rr_route: string, use if effect specific to route
+
+infobox_med_pain: string
+infobox_med_nausea: string
+
+{% endcomment %}
+<table class="infobox" align="right">
+    <tr>
+        <th colspan="2" style="font-size:22px;">
+            {% unless include.name %}
+                {{ page.title }}
+            {% else %}
+                {{ include.name }}
+            {% endunless %}
+        </th>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <img src="{{ page.infobox_image | relative_url }}" height="150">
+        </td>
+    </tr>
+    <tr class="infobox-header">
+        <td colspan="2">Item</td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding:0;">
+            <table class="infobox-inline-table">
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable-f">Category</td>
+                    <td class="infobox-row-itable-f">
+                        {% case page.infobox_use_category %}
+                            {% when "airway" %}
+                            <img src="{{ '/wiki/image/category_airway.png' | relative_url }}" height="32">Airway
+                            {% when "advanced" %}
+                            <img src="{{ '/wiki/image/category_advanced.png' | relative_url }}" height="32">Advanced Treatment
+                            {% when "medication" %}
+                            <img src="{{ '/wiki/image/category_medication.png' | relative_url }}" height="32">Medication
+                            {% else %}
+                            <img src="{{ '/wiki/image/category_bandage.png' | relative_url }}" height="32">Bandage/Fracture
+                        {% endcase %}
+                    </td>
+                </tr>
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable">Action Access</td>
+                    <td class="infobox-row-itable">
+                        {% case page.infobox_use_selection %}
+                        {% when "head" %}
+                        <div class="infobox-selection-img"><img src="/assets/images/infobox/body_select_head.png" height="64"></div><div class="infobox-selection-text">Head</div>
+                        {% when "arms" %}
+                        <div class="infobox-selection-img"><img src="/assets/images/infobox/body_select_arms.png" height="64"></div><div class="infobox-selection-text">Arms</div>
+                        {% when "limbs" %}
+                        <div class="infobox-selection-img"><img src="/assets/images/infobox/body_select_limbs.png" height="64"></div><div class="infobox-selection-text">Arms<br>Legs</div>
+                        {% when "torso" %}
+                        <div class="infobox-selection-img"><img src="/assets/images/infobox/body_select_torso.png" height="64"></div><div class="infobox-selection-text">Torso</div>
+                        {% when "body" %}
+                        <div class="infobox-selection-img"><img src="/assets/images/infobox/body_select_torso_limbs.png" height="64"></div><div class="infobox-selection-text">Torso<br>Arms<br>Legs</div>
+                        {% else %}
+                        <div class="infobox-selection-img"><img src="/assets/images/infobox/body_select_all.png" height="64"></div><div class="infobox-selection-text">All</div>
+                        {% endcase %}
+                    </td>
+                </tr>
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable">Use Count</td>
+                    <td class="infobox-row-itable">
+                        {% if page.infobox_item_usecount > 1 %}
+                        {{page.infobox_item_usecount}}x
+                        {% elsif page.infobox_item_usecount == 0 %}
+                        Re-usable
+                        {% else %}
+                        Single-use
+                        {% endif %}
+                    </td>
+                </tr>
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable">Weight</td>
+                    <td class="infobox-row-itable">{{ page.infobox_item_weight }}</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr class="infobox-header">
+        <td colspan="2">{% if page.infobox_vial_type %}{{ page.infobox_vial_type }}{% else %}Vial{% endif %}</td> 
+    </tr>
+    <tr class="infobox-row">
+        <td class="infobox-row-title" style="min-width:40%;">{% if page.infobox_vial_type %}{{ page.infobox_vial_type }}{% else %}Vial{% endif %} Size</td>
+        <td>{{ page.infobox_vial_size }}ml</td>
+    </tr>
+    <tr class="infobox-row">
+        <td class="infobox-row-title" style="min-width:40%;">{% if page.infobox_vial_type %}{{ page.infobox_vial_type }}{% else %}Vial{% endif %} Contents</td>
+        <td>
+            {% if page.infobox_vial_contents_micro %}
+            {{ page.infobox_vial_contents }}mcg
+            {% else %}
+            {% if page.infobox_vial_contents >= 1000 %}
+            {{ page.infobox_vial_contents }}mg <span style="font-size:12px;vertical-align:text-top;">({{ page.infobox_vial_contents | divided_by: 1000 }}g)</span>
+            {% else %}
+            {{ page.infobox_vial_contents }}mg
+            {% endif %}
+            {% endif %}
+        </td>
+    </tr>
+    {% if page.infobox_vial_contents and page.infobox_vial_size %}
+    <tr class="infobox-row">
+        <td class="infobox-row-title" style="min-width:40%;">{% if page.infobox_vial_type %}{{ page.infobox_vial_type }}{% else %}Vial{% endif %} Concentration</td>
+        <td>{{ page.infobox_vial_contents | divided_by: page.infobox_vial_size }}{% if page.infobox_vial_contents_micro %}mcg{% else %}mg{% endif %}/ml</td>
+    </tr>
+    {% endif %}
+    <tr class="infobox-header">
+        <td colspan="2">Medication</td>
+    </tr>
+    <tr class="infobox-row">
+        <td class="infobox-row-title" style="min-width:40%;">Route(s) of administration</td>
+        <td>
+            {% if page.infobox_med_route %}
+                {{page.infobox_med_route}}
+            {% elsif page.infobox_med_iv and page.infobox_med_im %}
+                IV/IM
+            {% elsif page.infobox_med_iv %}
+                IV Only
+            {% else %}
+                IM Only
+            {% endif %}
+        </td>
+    </tr>
+    {% if page.infobox_med_dose %}
+    <tr class="infobox-row">
+        <td class="infobox-row-title" style="min-width:40%;">
+            Dose Range {% if page.infobox_med_dose_multi %}<span style="font-size:11px;vertical-align:text-top;"><br>(Use case dependant)</span>{% endif %}
+        </td> 
+        <td>{{ page.infobox_med_dose }}{% if page.infobox_med_dose_checknote %}<span style="font-size:11px;vertical-align:text-top;"> (See <a href="#dosing">Dosing</a>)</span>{% endif %}</td>
+    </tr>
+    {% endif %}
+    <tr class="infobox-header">
+        <td colspan="2">Medication Effects</td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding:0;">
+            <table class="infobox-inline-table">
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable-f" style="min-width:40%;">
+                        Onset {% if page.infobox_med_iv and page.infobox_med_im and page.infobox_med_iv_onset and page.infobox_med_im_onset %}<span style="font-size:11px;vertical-align:text-top;">(IV/IM)</span>{% endif %}
+                    </td>
+                    <td class="infobox-row-itable-f">
+                        {% if page.infobox_med_iv and page.infobox_med_im and page.infobox_med_iv_onset and page.infobox_med_im_onset %}
+                            {{ page.infobox_med_iv_onset }} | {{ page.infobox_med_im_onset }}
+                        {% else %}
+                            {{ page.infobox_med_iv_onset }}{{ page.infobox_med_im_onset }}
+                        {% endif %}
+                    </td>
+                </tr>
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable" style="min-width:40%;">
+                        Peak {% if page.infobox_med_iv and page.infobox_med_im and page.infobox_med_iv_peak and page.infobox_med_im_peak %}<span style="font-size:11px;vertical-align:text-top;">(IV/IM)</span>{% endif %}
+                    </td>
+                    <td class="infobox-row-itable">
+                        {% if page.infobox_med_iv and page.infobox_med_im and page.infobox_med_iv_peak and page.infobox_med_im_peak %}
+                            {{ page.infobox_med_iv_peak }} | {{ page.infobox_med_im_peak }}
+                        {% else %}
+                            {{ page.infobox_med_iv_peak }}{{ page.infobox_med_im_peak }}
+                        {% endif %}
+                    </td>
+                </tr>
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable" style="min-width:40%;">
+                        Duration {% if page.infobox_med_iv and page.infobox_med_im and page.infobox_med_iv_duration and page.infobox_med_im_duration %}<span style="font-size:11px;vertical-align:text-top;">(IV/IM)</span>{% endif %}
+                    </td>
+                    <td class="infobox-row-itable">
+                        {% if page.infobox_med_iv and page.infobox_med_im and page.infobox_med_iv_duration and page.infobox_med_im_duration %}
+                            {{ page.infobox_med_iv_duration }} | {{ page.infobox_med_im_duration }}
+                        {% else %}
+                            {{ page.infobox_med_iv_duration }}{{ page.infobox_med_im_duration }}
+                        {% endif %}
+                    </td>
+                </tr>
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable" style="min-width:40%;">
+                        <abbr title="Heart Rate">HR</abbr> | <abbr title="Blood Pressure">BP</abbr> | <abbr title="Respiration Rate">RR</abbr>
+                    </td>
+                    <td class="infobox-row-itable" style="font-size:18px;">
+                        {% if page.infobox_med_effect_hr %}
+                        {% if page.infobox_med_effect_hr_route %}<span style="font-size:12px;vertical-align:middle;">({{ page.infobox_med_effect_hr_route }})</span>{% endif %}
+                        <span style="letter-spacing:2px;">{{ page.infobox_med_effect_hr }}</span>
+                        {% else %}
+                        <span style="font-size:12px;vertical-align:middle;">N/A</span>
+                        {% endif %} |
+                        {% if page.infobox_med_effect_bp %}
+                        {% if page.infobox_med_effect_bp_route %}<span style="font-size:12px;vertical-align:middle;">({{ page.infobox_med_effect_bp_route }})</span>{% endif %}
+                        <span style="letter-spacing:2px;">{{ page.infobox_med_effect_bp }}</span>
+                        {% else %}
+                        <span style="font-size:12px;vertical-align:middle;">N/A</span>
+                        {% endif %} |
+                        {% if page.infobox_med_effect_rr %}
+                        {% if page.infobox_med_effect_rr_route %}<span style="font-size:12px;vertical-align:middle;">({{ page.infobox_med_effect_rr_route }})</span>{% endif %}
+                        <span style="letter-spacing:2px;">{{ entry.infobox_med_effect_rr }}</span>
+                        {% else %}
+                        <span style="font-size:12px;vertical-align:middle;">N/A</span>
+                        {% endif %}
+                    </td>
+                </tr>
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable" style="min-width:40%;">Pain Relief</td>
+                    <td class="infobox-row-itable">
+                        {% if page.infobox_med_pain %}
+                            {{ page.infobox_med_pain }}
+                        {% else %}
+                            None
+                        {% endif %}
+                    </td>
+                </tr>
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable" style="min-width:40%;">Nausea</td>
+                    <td class="infobox-row-itable">
+                        {% if page.infobox_med_nausea %}
+                            {{ page.infobox_med_nausea }}
+                        {% else %}
+                            None
+                        {% endif %}
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr class="infobox-header">
+        <td colspan="2">Technical</td>
+    </tr>
+    <tr>
+        <td colspan="2" style="padding:0;">
+            <table class="infobox-inline-table">
+                <tr class="infobox-row">
+                    <td class="infobox-row-title-itable-f">Classname</td>
+                    <td class="infobox-row-itable-f"><code>{{ page.infobox_item_classname }}</code></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
