@@ -31,12 +31,12 @@ Wraps can also be used to treat bruises, and to stabilize SAM Splints.
 
 ### Clotting
 {:.no_toc}
-{% include git-wiki/components/template/link-note.html text="Also see: [Coagulation](#coagulation)" %}
+{% include git-wiki/components/template/link_note.html text="Also see: [Coagulation](#coagulation)" %}
 Mild bleeding wounds have a possibility of clotting on their own.
 Clots can be made more durable with TXA, most clots are unstable and are likely to reopen and should be wrapped or stitched when possible.
 
 ## Internal Wounds
-{% include git-wiki/components/template/link-note.html text="See: [Internal Bleeding](#internal-bleeding)" %}
+{% include git-wiki/components/template/link_note.html text="See: [Internal Bleeding](#internal-bleeding)" %}
 
 # Airway
 ## Loss of reflexes
@@ -333,8 +333,8 @@ Syringes
         <td>~10m</td>
         <td>~15m</td>
         <td></td>
-        <td></td>
         <td>-</td>
+        <td></td>
         <td></td>
     </tr>
     <tr>
