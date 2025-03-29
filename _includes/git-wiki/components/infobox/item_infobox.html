@@ -88,17 +88,17 @@ infobox_med_nausea: string
                     <td class="infobox-row-itable">
                         {% case page.infobox_use_selection %}
                         {% when "head" %}
-                        <div class="infobox-selection-img"><img src="/assets/images/infobox/body_select_head.png" height="64"></div><div class="infobox-selection-text">Head</div>
+                        <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_head.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Head</div>
                         {% when "arms" %}
-                        <div class="infobox-selection-img"><img src="/assets/images/infobox/body_select_arms.png" height="64"></div><div class="infobox-selection-text">Arms</div>
+                        <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_arms.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Arms</div>
                         {% when "limbs" %}
-                        <div class="infobox-selection-img"><img src="/assets/images/infobox/body_select_limbs.png" height="64"></div><div class="infobox-selection-text">Arms<br>Legs</div>
+                        <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_limbs.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Arms<br>Legs</div>
                         {% when "torso" %}
-                        <div class="infobox-selection-img"><img src="/assets/images/infobox/body_select_torso.png" height="64"></div><div class="infobox-selection-text">Torso</div>
+                        <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_torso.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Torso</div>
                         {% when "body" %}
-                        <div class="infobox-selection-img"><img src="/assets/images/infobox/body_select_torso_limbs.png" height="64"></div><div class="infobox-selection-text">Torso<br>Arms<br>Legs</div>
+                        <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_torso_limbs.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Torso<br>Arms<br>Legs</div>
                         {% else %}
-                        <div class="infobox-selection-img"><img src="/assets/images/infobox/body_select_all.png" height="64"></div><div class="infobox-selection-text">All</div>
+                        <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_all.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">All</div>
                         {% endcase %}
                     </td>
                 </tr>
