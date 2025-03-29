@@ -3,9 +3,8 @@
         <th style="padding-left:5px;padding-right:5px;">Medication</th>
         <th style="padding-left:5px;padding-right:5px;">Use</th>
         <th style="padding-left:5px;padding-right:5px;">Access</th>
-        <th style="padding-left:5px;padding-right:5px;">Contents</th>
-        <th style="padding-left:5px;padding-right:5px;">Concentration</th>
-        <th style="padding-left:5px;padding-right:5px;">Dose Range</th>
+        <th style="padding-left:5px;padding-right:5px;">Access Body Part</th>
+        <th style="padding-left:5px;padding-right:5px;">Recommended Dose</th>
         <th style="padding-left:5px;padding-right:5px;">Onset</th>
         <th style="padding-left:5px;padding-right:5px;">Peak</th>
         <th style="padding-left:5px;padding-right:5px;">Duration</th>
@@ -13,10 +12,10 @@
         <th style="padding-left:5px;padding-right:5px;"><abbr title="Blood Pressure">BP</abbr></th>
         <th style="padding-left:5px;padding-right:5px;"><abbr title="Respiration Rate">RR</abbr></th>
         <th style="padding-left:5px;padding-right:5px;">Pain Relief</th>
-        <th style="padding-left:5px;padding-right:5px;">Nausea</th>
+        <!--<th style="padding-left:5px;padding-right:5px;">Nausea</th>-->
     </tr>
 {% for entry in site.pages %}
-    {% if entry.page_category contains 'liquid_medication' %}
+    {% if entry.page_category contains 'packaged_medication' %}
     <tr>
         <td style="text-align:left;width:fit-content;padding:4px;">
             <img src="{{ entry.infobox_image | relative_url }}" height="50"><a href="{{ entry.title }}">{{ entry.title }}</a>
@@ -25,6 +24,9 @@
             {{ entry.export_use }}
         </td>
         <td style="padding:0;">
+            {% if entry.infobox_med_autoinjector %}
+                IM
+            {% else %}
             {% if entry.infobox_med_route %}
                 {{entry.infobox_med_route}}
             {% elsif entry.infobox_med_iv and entry.infobox_med_im %}
@@ -34,22 +36,23 @@
             {% else %}
                 IM Only
             {% endif %}
-        </td>
-        <td style="padding:0;">
-            {% if entry.infobox_vial_contents_micro %}
-            {{ entry.infobox_vial_contents }}mcg/{{ entry.infobox_vial_size }}ml
-            {% else %}
-            {% if entry.infobox_vial_contents >= 1000 %}
-            {{ entry.infobox_vial_contents | divided_by: 1000 }}g/{{ entry.infobox_vial_size }}ml
-            {% else %}
-            {{ entry.infobox_vial_contents }}mg/{{ entry.infobox_vial_size }}ml
-            {% endif %}
             {% endif %}
         </td>
-        <td style="padding:0;">
-            {% if entry.infobox_vial_contents and entry.infobox_vial_size %}
-            {{ entry.infobox_vial_contents | divided_by: entry.infobox_vial_size }}{% if entry.infobox_vial_contents_micro %}mcg{% else %}mg{% endif %}/ml
-            {% endif %}
+        <td style="width:7%;padding:4px;">
+            {% case entry.infobox_use_selection %}
+                {% when "head" %}
+                <div class="infobox-selection-img"><img src="/assets/images/infobox/body_select_head.png" height="64" width="64"></div><div class="infobox-selection-text">Head</div>
+                {% when "arms" %}
+                <div class="infobox-selection-img"><img src="/assets/images/infobox/body_select_arms.png" height="64" width="64"></div><div class="infobox-selection-text">Arms</div>
+                {% when "limbs" %}
+                <div class="infobox-selection-img"><img src="/assets/images/infobox/body_select_limbs.png" height="64" width="64"></div><div class="infobox-selection-text">Arms<br>Legs</div>
+                {% when "torso" %}
+                <div class="infobox-selection-img"><img src="/assets/images/infobox/body_select_torso.png" height="64" width="64"></div><div class="infobox-selection-text">Torso</div>
+                {% when "body" %}
+                <div class="infobox-selection-img"><img src="/assets/images/infobox/body_select_torso_limbs.png" height="64" width="64"></div><div class="infobox-selection-text">Torso<br>Arms<br>Legs</div>
+                {% else %}
+                <div class="infobox-selection-img"><img src="/assets/images/infobox/body_select_all.png" height="64" width="64"></div><div class="infobox-selection-text" style="width:50%;">All</div>
+            {% endcase %}
         </td>
         <td style="text-align:left;">
             {% if entry.export_doserange %}
@@ -59,24 +62,36 @@
             {% endif %}
         </td>
         <td>
-            {% if entry.infobox_med_iv and entry.infobox_med_im and entry.infobox_med_iv_onset and entry.infobox_med_im_onset %}
-                {{ entry.infobox_med_iv_onset }} | {{ entry.infobox_med_im_onset }}
+            {% if entry.infobox_med_route %}
+                {{ entry.infobox_med_onset }}
             {% else %}
-                {{ entry.infobox_med_iv_onset }}{{ entry.infobox_med_im_onset }}
+                {% if entry.infobox_med_iv and entry.infobox_med_im and entry.infobox_med_iv_onset and entry.infobox_med_im_onset %}
+                    {{ entry.infobox_med_iv_onset }} | {{ entry.infobox_med_im_onset }}
+                {% else %}
+                    {{ entry.infobox_med_iv_onset }}{{ entry.infobox_med_im_onset }}
+                {% endif %}
             {% endif %}
         </td>
         <td>
-            {% if entry.infobox_med_iv and entry.infobox_med_im and entry.infobox_med_iv_peak and entry.infobox_med_im_peak %}
-                {{ entry.infobox_med_iv_peak }} | {{ entry.infobox_med_im_peak }}
+            {% if entry.infobox_med_route %}
+                {{ entry.infobox_med_peak }}
             {% else %}
-                {{ entry.infobox_med_iv_peak }}{{ entry.infobox_med_im_peak }}
+                {% if entry.infobox_med_iv and entry.infobox_med_im and entry.infobox_med_iv_peak and entry.infobox_med_im_peak %}
+                    {{ entry.infobox_med_iv_peak }} | {{ entry.infobox_med_im_peak }}
+                {% else %}
+                    {{ entry.infobox_med_iv_peak }}{{ entry.infobox_med_im_peak }}
+                {% endif %}
             {% endif %}
         </td>
         <td>
-            {% if entry.infobox_med_iv and entry.infobox_med_im and entry.infobox_med_iv_duration and entry.infobox_med_im_duration %}
-                {{ entry.infobox_med_iv_duration }} | {{ entry.infobox_med_im_duration }}
+            {% if entry.infobox_med_route %}
+                {{ entry.infobox_med_duration }}
             {% else %}
-                {{ entry.infobox_med_iv_duration }}{{ entry.infobox_med_im_duration }}
+                {% if entry.infobox_med_iv and entry.infobox_med_im and entry.infobox_med_iv_duration and entry.infobox_med_im_duration %}
+                    {{ entry.infobox_med_iv_duration }} | {{ entry.infobox_med_im_duration }}
+                {% else %}
+                    {{ entry.infobox_med_iv_duration }}{{ entry.infobox_med_im_duration }}
+                {% endif %}
             {% endif %}
         </td>
         <td style="padding:2px;width:54px;font-size:16px;font-weight:bold;">
@@ -99,9 +114,6 @@
         </td>
         <td>
             {{ entry.infobox_med_pain }}
-        </td>
-        <td>
-            {{ entry.infobox_med_nausea }}
         </td>
     </tr>
     {% endif %}

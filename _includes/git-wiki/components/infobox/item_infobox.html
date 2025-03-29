@@ -24,6 +24,8 @@ infobox_med_dose: string
 infobox_med_dose_multi: bool, different doses based on use case
 infobox_med_dose_checknote: bool, check dose section
 
+infobox_med_autoinjector: bool
+
 infobox_med_iv: bool
 infobox_med_iv_onset: string
 infobox_med_iv_peak:  string
@@ -119,6 +121,8 @@ infobox_med_nausea: string
             </table>
         </td>
     </tr>
+    {% if page.infobox_med_route or page.infobox_med_autoinjector %}
+    {% else %}
     <tr class="infobox-header">
         <td colspan="2">{% if page.infobox_vial_type %}{{ page.infobox_vial_type }}{% else %}Vial{% endif %}</td> 
     </tr>
@@ -146,12 +150,16 @@ infobox_med_nausea: string
         <td>{{ page.infobox_vial_contents | divided_by: page.infobox_vial_size }}{% if page.infobox_vial_contents_micro %}mcg{% else %}mg{% endif %}/ml</td>
     </tr>
     {% endif %}
+    {% endif %}
     <tr class="infobox-header">
         <td colspan="2">Medication</td>
     </tr>
     <tr class="infobox-row">
         <td class="infobox-row-title" style="min-width:40%;">Route(s) of administration</td>
         <td>
+            {% if page.infobox_med_autoinjector %}
+                IM
+            {% else %}
             {% if page.infobox_med_route %}
                 {{page.infobox_med_route}}
             {% elsif page.infobox_med_iv and page.infobox_med_im %}
@@ -161,14 +169,19 @@ infobox_med_nausea: string
             {% else %}
                 IM Only
             {% endif %}
+            {% endif %}
         </td>
     </tr>
     {% if page.infobox_med_dose %}
     <tr class="infobox-row">
         <td class="infobox-row-title" style="min-width:40%;">
-            Dose Range {% if page.infobox_med_dose_multi %}<span style="font-size:11px;vertical-align:text-top;"><br>(Use case dependant)</span>{% endif %}
+            {% unless page.infobox_med_route %}
+            Dose Range
+            {% else %}
+            Recommended Dose
+            {% endunless %} {% if page.infobox_med_dose_multi %}<span style="font-size:11px;vertical-align:text-top;"><br>(Use case dependant)</span>{% endif %}
         </td> 
-        <td>{{ page.infobox_med_dose }}{% if page.infobox_med_dose_checknote %}<span style="font-size:11px;vertical-align:text-top;"> (See <a href="#dosing">Dosing</a>)</span>{% endif %}</td>
+        <td style="text-wrap:balance;">{{ page.infobox_med_dose }}{% if page.infobox_med_dose_checknote %}<span style="font-size:11px;vertical-align:text-top;"> (See <a href="#dosing">Dosing</a>)</span>{% endif %}</td>
     </tr>
     {% endif %}
     <tr class="infobox-header">
@@ -182,10 +195,14 @@ infobox_med_nausea: string
                         Onset {% if page.infobox_med_iv and page.infobox_med_im and page.infobox_med_iv_onset and page.infobox_med_im_onset %}<span style="font-size:11px;vertical-align:text-top;">(IV/IM)</span>{% endif %}
                     </td>
                     <td class="infobox-row-itable-f">
+                        {% if page.infobox_med_route %}
+                        {{ page.infobox_med_onset }}
+                        {% else %}
                         {% if page.infobox_med_iv and page.infobox_med_im and page.infobox_med_iv_onset and page.infobox_med_im_onset %}
                             {{ page.infobox_med_iv_onset }} | {{ page.infobox_med_im_onset }}
                         {% else %}
                             {{ page.infobox_med_iv_onset }}{{ page.infobox_med_im_onset }}
+                        {% endif %}
                         {% endif %}
                     </td>
                 </tr>
@@ -194,10 +211,14 @@ infobox_med_nausea: string
                         Peak {% if page.infobox_med_iv and page.infobox_med_im and page.infobox_med_iv_peak and page.infobox_med_im_peak %}<span style="font-size:11px;vertical-align:text-top;">(IV/IM)</span>{% endif %}
                     </td>
                     <td class="infobox-row-itable">
+                        {% if page.infobox_med_route %}
+                        {{ page.infobox_med_peak }}
+                        {% else %}
                         {% if page.infobox_med_iv and page.infobox_med_im and page.infobox_med_iv_peak and page.infobox_med_im_peak %}
                             {{ page.infobox_med_iv_peak }} | {{ page.infobox_med_im_peak }}
                         {% else %}
                             {{ page.infobox_med_iv_peak }}{{ page.infobox_med_im_peak }}
+                        {% endif %}
                         {% endif %}
                     </td>
                 </tr>
@@ -206,10 +227,14 @@ infobox_med_nausea: string
                         Duration {% if page.infobox_med_iv and page.infobox_med_im and page.infobox_med_iv_duration and page.infobox_med_im_duration %}<span style="font-size:11px;vertical-align:text-top;">(IV/IM)</span>{% endif %}
                     </td>
                     <td class="infobox-row-itable">
+                        {% if page.infobox_med_route %}
+                        {{ page.infobox_med_duration }}
+                        {% else %}
                         {% if page.infobox_med_iv and page.infobox_med_im and page.infobox_med_iv_duration and page.infobox_med_im_duration %}
                             {{ page.infobox_med_iv_duration }} | {{ page.infobox_med_im_duration }}
                         {% else %}
                             {{ page.infobox_med_iv_duration }}{{ page.infobox_med_im_duration }}
+                        {% endif %}
                         {% endif %}
                     </td>
                 </tr>
@@ -232,7 +257,7 @@ infobox_med_nausea: string
                         {% endif %} |
                         {% if page.infobox_med_effect_rr %}
                         {% if page.infobox_med_effect_rr_route %}<span style="font-size:12px;vertical-align:middle;">({{ page.infobox_med_effect_rr_route }})</span>{% endif %}
-                        <span style="letter-spacing:2px;">{{ entry.infobox_med_effect_rr }}</span>
+                        <span style="letter-spacing:2px;">{{ page.infobox_med_effect_rr }}</span>
                         {% else %}
                         <span style="font-size:12px;vertical-align:middle;">N/A</span>
                         {% endif %}
