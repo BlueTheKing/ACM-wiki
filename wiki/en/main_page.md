@@ -1,6 +1,6 @@
 ---
 title: Main Page
-permalink: /en/main_page
+permalink: /en/Main_Page
 redirect_from: 
     - "/"
     - "/en"

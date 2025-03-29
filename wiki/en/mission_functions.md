@@ -1,6 +1,6 @@
 ---
 title: Mission Functions
-permalink: /en/mission_functions
+permalink: /en/Mission_Functions
 published: true
 ---
 
