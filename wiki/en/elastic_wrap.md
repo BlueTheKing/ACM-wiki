@@ -11,7 +11,7 @@ page_category:
 - external_bleeding_management
 
 export_use: "Wrapping clotted, bandaged and bruised injuries"
-export_condition: "Body part must have un-wrapped clots or bandages, and not be bleeding"
+export_condition: "Body part must have un-wrapped clots or bandages<br>Body part must not be bleeding"
 
 infobox_image: "/wiki/image/elasticwrap.png"
 

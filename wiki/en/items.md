@@ -10,6 +10,8 @@ published: true
 
 # Airway Management
 
+{% include git-wiki/components/template/table_airway_management.html %}
+
 # Medication
 
 ## Liquid Medication

@@ -2,12 +2,15 @@
 {% include git-wiki/components/infobox/item_infobox.html %}
 
 export_use: string
+export_condition: string
 export_doserange: string
 
 infobox_image: "/wiki/image/xyz.png"
 
 infobox_use_category: airway/advanced/medication/bandage
 infobox_use_selection: head/arms/limbs/torso/body/all
+
+infobox_item_type: string
 infobox_item_usecount 0/1/>2
 
 infobox_item_weight: string, kg / lb
@@ -70,9 +73,15 @@ infobox_med_nausea: string
     <tr>
         <td colspan="2" style="padding:0;">
             <table class="infobox-inline-table">
+                {% if page.infobox_item_type %}
                 <tr class="infobox-row">
-                    <td class="infobox-row-title-itable-f">Category</td>
-                    <td class="infobox-row-itable-f" style="padding:5px 0 5px 0;">
+                    <td class="infobox-row-title-itable-f">Type</td>
+                    <td class="infobox-row-itable-f" style="padding:5px 0 5px 0;">{{ page.infobox_item_type }}</td>
+                </tr>
+                {% endif %}
+                <tr class="infobox-row">
+                    {% if page.infobox_item_type %}<td class="infobox-row-title-itable">{% else %}<td class="infobox-row-title-itable-f">{% endif %}Category</td>
+                    {% if page.infobox_item_type %}<td class="infobox-row-itable" style="padding:5px 0 5px 0;">{% else %}<td class="infobox-row-itable-f" style="padding:5px 0 5px 0;">{% endif %}
                         {% case page.infobox_use_category %}
                             {% when "airway" %}
                             <img src="{{ '/wiki/image/category_airway.png' | relative_url }}" height="32">Airway

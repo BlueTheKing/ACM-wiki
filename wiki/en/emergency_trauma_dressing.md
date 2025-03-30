@@ -11,7 +11,7 @@ page_category:
 - external_bleeding_management
 
 export_use: "Bandaging many bleeding wounds"
-export_condition: "Body part must have bleeding wounds, cannot self-treat"
+export_condition: "Body part must have bleeding wounds<br>Cannot be used to self-treat"
 
 infobox_image: "/wiki/image/etd.png"
 
