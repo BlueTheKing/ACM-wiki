@@ -1,6 +1,9 @@
 {% comment %}
 {% include git-wiki/components/infobox/item_infobox.html %}
 
+title_long: string
+title_short: string
+
 export_use: string
 export_condition: string
 export_doserange: string
@@ -84,13 +87,15 @@ infobox_med_nausea: string
                     {% if page.infobox_item_type %}<td class="infobox-row-itable" style="padding:5px 0 5px 0;">{% else %}<td class="infobox-row-itable-f" style="padding:5px 0 5px 0;">{% endif %}
                         {% case page.infobox_use_category %}
                             {% when "airway" %}
-                            <img src="{{ '/wiki/image/category_airway.png' | relative_url }}" height="32">Airway
+                            <img src="{{ '/wiki/image/category_airway.png' | relative_url }}" height="32"><span style="margin-left:4px;">Airway</span>
                             {% when "advanced" %}
-                            <img src="{{ '/wiki/image/category_advanced.png' | relative_url }}" height="32">Advanced Treatment
+                            <img src="{{ '/wiki/image/category_advanced.png' | relative_url }}" height="32"><span style="margin-left:4px;">Advanced Treatment</span>
+                            {% when "examine" %}
+                            <img src="{{ '/wiki/image/category_examine.png' | relative_url }}" height="32"><span style="margin-left:4px;">Examine</span>
                             {% when "medication" %}
-                            <img src="{{ '/wiki/image/category_medication.png' | relative_url }}" height="32">Medication
+                            <img src="{{ '/wiki/image/category_medication.png' | relative_url }}" height="32"><span style="margin-left:4px;">Medication</span>
                             {% else %}
-                            <img src="{{ '/wiki/image/category_bandage.png' | relative_url }}" height="32">Bandage/Fracture
+                            <img src="{{ '/wiki/image/category_bandage.png' | relative_url }}" height="32"><span style="margin-left:4px;">Bandage/Fracture</span>
                         {% endcase %}
                     </td>
                 </tr>

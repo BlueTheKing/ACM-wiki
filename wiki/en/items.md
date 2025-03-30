@@ -12,6 +12,10 @@ published: true
 
 {% include git-wiki/components/template/table_airway_management.html %}
 
+# Breathing
+
+{% include git-wiki/components/template/table_breathing.html %}
+
 # Medication
 
 ## Liquid Medication
