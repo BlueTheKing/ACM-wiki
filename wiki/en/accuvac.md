@@ -1,6 +1,6 @@
 ---
 title: ACCUVAC
-permalink: /en/accuvac
+permalink: /en/ACCUVAC
 redirect_from: 
 - /en/ACCUVAC
 published: true
