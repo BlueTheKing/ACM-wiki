@@ -1,7 +1,7 @@
 ---
 title: ACCUVAC
 permalink: /en/ACCUVAC
-redirect_from: 
+redirect_from:
 - /en/ACCUVAC
 published: true
 

@@ -1,7 +1,7 @@
 ---
 title: Penthrox Inhaler
 permalink: /en/Penthrox_Inhaler
-redirect_from: 
+redirect_from:
 - /en/Penthrox Inhaler
 published: true
 

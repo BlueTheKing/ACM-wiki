@@ -2,7 +2,7 @@
 title: NCD Kit
 title_long: Needle-Chest-Decompression Kit
 permalink: /en/NCD_Kit
-redirect_from: 
+redirect_from:
 - /en/Needle-Chest-Decompression Kit
 - /en/NCD Kit
 published: true

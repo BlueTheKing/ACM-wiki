@@ -1,7 +1,7 @@
 ---
 title: Morphine Autoinjector
 permalink: /en/Morphine_Autoinjector
-redirect_from: 
+redirect_from:
 - /en/Morphine Autoinjector
 published: true
 

@@ -1,7 +1,7 @@
 ---
 title: Midazolam Autoinjector
 permalink: /en/Midazolam_Autoinjector
-redirect_from: 
+redirect_from:
 - /en/Midazolam Autoinjector
 published: true
 

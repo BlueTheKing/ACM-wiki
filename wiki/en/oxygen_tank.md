@@ -1,7 +1,7 @@
 ---
 title: Portable Oxygen Tank
 permalink: /en/Portable_Oxygen_Tank
-redirect_from: 
+redirect_from:
 - /en/Portable Oxygen Tank
 - /en/Oxygen Tank
 published: true

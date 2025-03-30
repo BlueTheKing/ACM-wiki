@@ -1,7 +1,7 @@
 ---
 title: Epinephrine Autoinjector
 permalink: /en/Epinephrine_Autoinjector
-redirect_from: 
+redirect_from:
 - /en/Epinephrine Autoinjector
 published: true
 

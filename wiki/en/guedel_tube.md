@@ -1,7 +1,7 @@
 ---
 title: Guedel Tube
 permalink: /en/Guedel_Tube
-redirect_from: 
+redirect_from:
 - /en/Guedel Tube
 - /en/OPA
 published: true

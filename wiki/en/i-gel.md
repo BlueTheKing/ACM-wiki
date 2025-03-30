@@ -1,7 +1,7 @@
 ---
 title: i-gel
 permalink: /en/i-gel
-redirect_from: 
+redirect_from:
 - /en/igel
 published: true
 

@@ -1,7 +1,7 @@
 ---
 title: Pulse Oximeter
 permalink: /en/Pulse_Oximeter
-redirect_from: 
+redirect_from:
 - /en/Pulse Oximeter
 published: true
 

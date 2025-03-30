@@ -1,7 +1,7 @@
 ---
 title: ATNA Autoinjector
 permalink: /en/ATNA_Autoinjector
-redirect_from: 
+redirect_from:
 - /en/ATNA Autoinjector
 published: true
 

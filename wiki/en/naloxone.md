@@ -1,7 +1,7 @@
 ---
 title: Naloxone Spray
 permalink: /en/Naloxone_Spray
-redirect_from: 
+redirect_from:
 - /en/Naloxone Spray
 published: true
 

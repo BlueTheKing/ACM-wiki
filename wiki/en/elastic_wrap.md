@@ -1,7 +1,7 @@
 ---
 title: Elastic Wrap
 permalink: /en/Elastic_Wrap
-redirect_from: 
+redirect_from:
 - /en/Elastic Wrap
 published: true
 

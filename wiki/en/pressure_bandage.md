@@ -1,7 +1,7 @@
 ---
 title: Pressure Bandage
 permalink: /en/Pressure_Bandage
-redirect_from: 
+redirect_from:
 - /en/Pressure Bandage
 published: true
 

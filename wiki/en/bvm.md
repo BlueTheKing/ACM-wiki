@@ -2,7 +2,7 @@
 title: Bag-Valve-Mask
 title_short: BVM
 permalink: /en/BVM
-redirect_from: 
+redirect_from:
 - /en/Bag-Valve-Mask
 published: true
 

@@ -1,7 +1,7 @@
 ---
 title: Chest Seal
 permalink: /en/Chest_Seal
-redirect_from: 
+redirect_from:
 - /en/Chest Seal
 published: true
 

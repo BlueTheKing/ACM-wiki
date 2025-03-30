@@ -1,7 +1,7 @@
 ---
 title: Thoracostomy Kit
 permalink: /en/Thoracostomy_Kit
-redirect_from: 
+redirect_from:
 - /en/Thoracostomy Kit
 published: true
 

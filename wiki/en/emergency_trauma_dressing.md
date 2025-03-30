@@ -1,7 +1,7 @@
 ---
 title: Emergency Trauma Dressing
 permalink: /en/Emergency_Trauma_Dressing
-redirect_from: 
+redirect_from:
 - /en/Emergency Trauma Dressing
 published: true
 

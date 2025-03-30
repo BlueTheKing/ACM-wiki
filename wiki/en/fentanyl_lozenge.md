@@ -1,7 +1,7 @@
 ---
 title: Fentanyl Lozenge
 permalink: /en/Fentanyl_Lozenge
-redirect_from: 
+redirect_from:
 - /en/Fentanyl Lozenge
 published: true
 

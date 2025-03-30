@@ -1,7 +1,7 @@
 ---
 title: Main Page
 permalink: /en/Main_Page
-redirect_from: 
+redirect_from:
     - "/"
     - "/en"
 published: true

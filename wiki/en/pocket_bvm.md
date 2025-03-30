@@ -1,7 +1,7 @@
 ---
 title: Pocket BVM
 permalink: /en/Pocket_BVM
-redirect_from: 
+redirect_from:
 - /en/Pocket BVM
 published: true
 

@@ -1,7 +1,7 @@
 ---
 title: Calcium Chloride
 permalink: /en/Calcium_Chloride
-redirect_from: 
+redirect_from:
 - /en/Calcium Chloride
 published: true
 

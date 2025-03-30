@@ -1,7 +1,7 @@
 ---
 title: Ammonia Inhalant
 permalink: /en/Ammonia_Inhalant
-redirect_from: 
+redirect_from:
 - /en/Ammonia Inhalant
 published: true
 

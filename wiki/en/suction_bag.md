@@ -1,7 +1,7 @@
 ---
 title: Emergency Disposable Suction Bag
 permalink: /en/Emergency_Disposable_Suction_Bag
-redirect_from: 
+redirect_from:
 - /en/Emergency Disposable Suction Bag
 - /en/Suction Bag
 - /en/Suction_Bag
