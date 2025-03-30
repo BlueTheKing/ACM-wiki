@@ -4,7 +4,13 @@ permalink: /en/Items
 published: true
 ---
 
-# Items List
+# Catastrophic Bleeding
+
+{% include git-wiki/components/template/table_bleeding_management.html %}
+
+# Airway Management
+
+# Medication
 
 ## Liquid Medication
 Liquid Medications come in pre-filled single use vials, size of vial and concentration of the contents depend on the specific medication and its intended use.

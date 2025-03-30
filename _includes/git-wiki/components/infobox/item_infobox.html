@@ -14,6 +14,8 @@ infobox_item_weight: string, kg / lb
 
 infobox_item_classname: string
 
+infobox_item_nonmedication: bool
+
 infobox_vial_type: string, "Ampule" for dimercaprol
 
 infobox_vial_size: int
@@ -70,7 +72,7 @@ infobox_med_nausea: string
             <table class="infobox-inline-table">
                 <tr class="infobox-row">
                     <td class="infobox-row-title-itable-f">Category</td>
-                    <td class="infobox-row-itable-f">
+                    <td class="infobox-row-itable-f" style="padding:5px 0 5px 0;">
                         {% case page.infobox_use_category %}
                             {% when "airway" %}
                             <img src="{{ '/wiki/image/category_airway.png' | relative_url }}" height="32">Airway
@@ -121,6 +123,8 @@ infobox_med_nausea: string
             </table>
         </td>
     </tr>
+    {% if page.infobox_item_nonmedication %}
+    {% else %}
     {% if page.infobox_med_route or page.infobox_med_autoinjector %}
     {% else %}
     <tr class="infobox-header">
@@ -286,6 +290,7 @@ infobox_med_nausea: string
             </table>
         </td>
     </tr>
+    {% endif %}
     <tr class="infobox-header">
         <td colspan="2">Technical</td>
     </tr>
