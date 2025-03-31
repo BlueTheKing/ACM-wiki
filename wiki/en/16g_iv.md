@@ -23,7 +23,7 @@ infobox_item_type: "IV Catheter"
 
 infobox_item_nonmedication: true
 
-infobox_item_weight: "0.01kg / 0.02lb"
+infobox_item_weight: "0.01kg | 0.02lb"
 
 infobox_item_classname: "ACM_IV_16g"
 ---

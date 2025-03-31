@@ -29,9 +29,9 @@ infobox_item_type: "Fluid Bag"
 infobox_item_nonmedication: true
 
 infobox_item_weights:
-- "0.11kg / 0.25lb"
-- "0.23kg / 0.5lb"
-- "0.45kg / 1lb"
+- "0.11kg | 0.25lb"
+- "0.23kg | 0.5lb"
+- "0.45kg | 1lb"
 
 infobox_item_classnames:
 - "ACE_plasmaIV_250"

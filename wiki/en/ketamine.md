@@ -16,7 +16,7 @@ infobox_image: "/wiki/image/vial_ketamine.png"
 infobox_use_category: "medication"
 infobox_use_selection: "body"
 
-infobox_item_weight: "0.01kg / 0.02lb"
+infobox_item_weight: "0.01kg | 0.02lb"
 
 infobox_item_classname: "ACM_Vial_Ketamine"
 

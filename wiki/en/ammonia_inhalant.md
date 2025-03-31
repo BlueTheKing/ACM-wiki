@@ -19,7 +19,7 @@ infobox_use_category: "medication"
 infobox_use_selection: "head"
 infobox_item_usecount: 8
 
-infobox_item_weight: "0.01kg / 0.03lb"
+infobox_item_weight: "0.01kg | 0.03lb"
 
 infobox_item_classname: "ACM_AmmoniaInhalant"
 

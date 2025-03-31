@@ -29,8 +29,8 @@ infobox_item_type: "Blood Transfusion Kit"
 infobox_item_nonmedication: true
 
 infobox_item_weights:
-- "0.05kg / 0.1lb"
-- "0.1kg / 0.2lb"
+- "0.05kg | 0.1lb"
+- "0.1kg | 0.2lb"
 
 infobox_item_classnames:
 - "ACM_FieldBloodTransfusionKit_250"

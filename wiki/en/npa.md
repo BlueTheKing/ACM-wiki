@@ -21,7 +21,7 @@ infobox_item_type: "Airway Adjunct"
 
 infobox_item_nonmedication: true
 
-infobox_item_weight: "0.06kg / 0.14lb"
+infobox_item_weight: "0.06kg | 0.14lb"
 
 infobox_item_classname: "ACM_NPA"
 ---

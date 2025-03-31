@@ -24,7 +24,7 @@ infobox_item_usecount: 0
 
 infobox_item_nonmedication: true
 
-infobox_item_weight: "0.23kg / 0.5lb"
+infobox_item_weight: "0.23kg | 0.5lb"
 
 infobox_item_classname: "ACM_PocketBVM"
 ---

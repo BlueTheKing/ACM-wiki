@@ -23,7 +23,7 @@ infobox_item_type: "Vented Occlusive Dressing"
 
 infobox_item_nonmedication: true
 
-infobox_item_weight: "0.09kg / 0.2lb"
+infobox_item_weight: "0.09kg | 0.2lb"
 
 infobox_item_classname: "ACM_ChestSeal"
 ---

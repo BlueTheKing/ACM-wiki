@@ -25,7 +25,7 @@ infobox_item_type: "Chest Injury Treatment Kit"
 
 infobox_item_nonmedication: true
 
-infobox_item_weight: "0.05kg / 0.1lb"
+infobox_item_weight: "0.05kg | 0.1lb"
 
 infobox_item_classname: "ACM_NCDKit"
 ---

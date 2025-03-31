@@ -20,7 +20,7 @@ infobox_use_selection: "all"
 
 infobox_item_nonmedication: true
 
-infobox_item_weight: "0.01kg / 0.03lb"
+infobox_item_weight: "0.01kg | 0.03lb"
 
 infobox_item_classname: "ACM_ElasticWrap"
 ---

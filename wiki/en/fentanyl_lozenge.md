@@ -17,7 +17,7 @@ infobox_image: "/wiki/image/lozenge_fentanyl.png"
 infobox_use_category: "medication"
 infobox_use_selection: "head"
 
-infobox_item_weight: "0.01kg / 0.02lb"
+infobox_item_weight: "0.01kg | 0.02lb"
 
 infobox_item_classname: "ACM_Lozenge_Fentanyl"
 

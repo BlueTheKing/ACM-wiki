@@ -24,7 +24,7 @@ infobox_item_type: "Airway Suction Device"
 
 infobox_item_nonmedication: true
 
-infobox_item_weight: "0.18kg / 0.4lb"
+infobox_item_weight: "0.18kg | 0.4lb"
 
 infobox_item_classname: "ACM_SuctionBag"
 ---
