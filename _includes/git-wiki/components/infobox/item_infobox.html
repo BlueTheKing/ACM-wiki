@@ -9,9 +9,14 @@ export_condition: string
 export_doserange: string
 
 infobox_image: "/wiki/image/xyz.png"
+infobox_images: array, require:infobox_item_multiitem
 
 infobox_use_category: airway/advanced/medication/bandage
-infobox_use_selection: head/arms/limbs/torso/body/all
+infobox_use_category2: airway/advanced/medication/bandage
+infobox_use_selection: head/arms/limbs/torso/upper/body/all
+
+infobox_item_multiitem: bool
+infobox_item_multiitem_variants: array, require:infobox_item_multiitem
 
 infobox_item_type: string
 infobox_item_usecount 0/1/>2
@@ -19,6 +24,7 @@ infobox_item_usecount 0/1/>2
 infobox_item_weight: string, kg / lb
 
 infobox_item_classname: string
+infobox_item_classnames: array, require:infobox_item_multiitem
 
 infobox_item_nonmedication: bool
 
@@ -63,11 +69,24 @@ infobox_med_nausea: string
             {% else %}
                 {{ include.name }}
             {% endunless %}
+            {% if page.infobox_item_multiitem %}<br>
+            <span style="font-size:16px;">(
+                {%- for text in page.infobox_item_multiitem_variants %}
+                {{- text }}{% unless forloop.last %} | {% endunless -%}
+                {% endfor -%}
+            )</span>
+            {% endif %}
         </th>
     </tr>
     <tr>
         <td colspan="2">
+            {% if page.infobox_images %}
+                {% for image in page.infobox_images %}
+                    <img src="{{ image | relative_url }}" height="150"><br>
+                {% endfor %}
+            {% else %}
             <img src="{{ page.infobox_image | relative_url }}" height="150">
+            {% endif %}
         </td>
     </tr>
     <tr class="infobox-header">
@@ -94,9 +113,27 @@ infobox_med_nausea: string
                             <img src="{{ '/wiki/image/category_examine.png' | relative_url }}" height="32"><span style="margin-left:4px;">Examine</span>
                             {% when "medication" %}
                             <img src="{{ '/wiki/image/category_medication.png' | relative_url }}" height="32"><span style="margin-left:4px;">Medication</span>
+                            {% when "transfusion" %}
+                            <img src="{{ '/wiki/image/category_advanced.png' | relative_url }}" height="32"><span style="margin-left:4px;">Transfusion</span>
                             {% else %}
                             <img src="{{ '/wiki/image/category_bandage.png' | relative_url }}" height="32"><span style="margin-left:4px;">Bandage/Fracture</span>
                         {% endcase %}
+                        {% if page.infobox_use_category2 %}
+                        <br><div style="float:left;margin-left:13px;">
+                        {% case page.infobox_use_category2 %}
+                            {% when "airway" %}
+                            <img src="{{ '/wiki/image/category_airway.png' | relative_url }}" height="32"><span style="margin-left:4px;">Airway</span>
+                            {% when "advanced" %}
+                            <img src="{{ '/wiki/image/category_advanced.png' | relative_url }}" height="32"><span style="margin-left:4px;">Advanced Treatment</span>
+                            {% when "examine" %}
+                            <img src="{{ '/wiki/image/category_examine.png' | relative_url }}" height="32"><span style="margin-left:4px;">Examine</span>
+                            {% when "medication" %}
+                            <img src="{{ '/wiki/image/category_medication.png' | relative_url }}" height="32"><span style="margin-left:4px;">Medication</span>
+                            {% else %}
+                            <img src="{{ '/wiki/image/category_bandage.png' | relative_url }}" height="32"><span style="margin-left:4px;">Bandage/Fracture</span>
+                        {% endcase %}
+                        </div>
+                        {% endif %}
                     </td>
                 </tr>
                 <tr class="infobox-row">
@@ -111,6 +148,8 @@ infobox_med_nausea: string
                         <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_limbs.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Arms<br>Legs</div>
                         {% when "torso" %}
                         <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_torso.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Torso</div>
+                        {% when "upper" %}
+                        <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_head_torso_arms.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Head<br>Torso<br>Arms</div>
                         {% when "body" %}
                         <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_torso_limbs.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Torso<br>Arms<br>Legs</div>
                         {% else %}
@@ -312,8 +351,17 @@ infobox_med_nausea: string
         <td colspan="2" style="padding:0;">
             <table class="infobox-inline-table">
                 <tr class="infobox-row">
+                    {% if page.infobox_item_classnames %}
+                    <td class="infobox-row-title-itable-f">Classnames</td>
+                    <td class="infobox-row-itable-f">
+                        {% for classname in page.infobox_item_classnames %}
+                       <code>{{ classname }}</code><br>
+                        {% endfor %}
+                    </td>
+                    {% else %}
                     <td class="infobox-row-title-itable-f">Classname</td>
-                    <td class="infobox-row-itable-f"><code>{{ page.infobox_item_classname }}</code></td>
+                    <td class="infobox-row-itable-f">{% if page.infobox_item_classname %}<code>{{ page.infobox_item_classname }}</code>{% else %}N/A{% endif %}</td>
+                    {% endif %}
                 </tr>
             </table>
         </td>

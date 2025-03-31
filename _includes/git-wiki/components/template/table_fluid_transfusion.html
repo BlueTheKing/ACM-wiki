@@ -1,0 +1,38 @@
+<table style="width:fit-content;">
+    <tr>
+        <th style="padding-left:5px;padding-right:5px;">Item</th>
+        <th style="padding-left:5px;padding-right:5px;">Type</th>
+        <th style="padding-left:5px;padding-right:5px;">Use</th>
+        <th style="padding-left:5px;padding-right:5px;">Condition</th>
+        <th style="padding-left:5px;padding-right:5px;">Weight</th>
+    </tr>
+{% for entry in site.pages %}
+    {% if entry.page_category contains 'fluid_transfusion' %}
+    <tr>
+        <td style="text-align:left;">
+            <img src="{{ entry.infobox_image | relative_url }}" height="50"> {% if entry.infobox_item_multiitem %}
+            <a href="{{ entry.title }}">{{ entry.title }}</a> <span style="font-size:11px;">(
+                {%- for text in entry.infobox_item_multiitem_variants %}
+                {{- text }}{% unless forloop.last %} | {% endunless -%}
+                {% endfor -%}
+            )</span>
+            {% else %}
+            <a href="{{ entry.title }}">{{ entry.title }}</a>
+            {% endif %}
+        </td>
+        <td>
+            {{ entry.infobox_item_type }}
+        </td>
+        <td style="text-align:left;">
+            {{ entry.export_use }}
+        </td>
+        <td style="text-align:left;">
+            {{ entry.export_condition }}
+        </td>
+        <td>
+            {{ entry.infobox_item_weight }}
+        </td>
+    </tr>
+    {% endif %}
+{% endfor %}
+</table>

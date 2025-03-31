@@ -124,6 +124,7 @@ th {
 
 img {
   max-width: 100%;
+  object-fit: contain;
 }
 
 .w3-teal {
@@ -556,6 +557,7 @@ table.infobox-inline-table {
 };
 
 .infobox-row-title {
+  padding: 5px;
   text-align: left;
   font-weight: bold;
   width: fit-content;
@@ -563,6 +565,7 @@ table.infobox-inline-table {
 };
 
 .infobox-row-title-itable {
+  padding: 5px;
   text-align: left;
   font-weight: bold;
   width: fit-content;
@@ -573,6 +576,7 @@ table.infobox-inline-table {
 };
 
 .infobox-row-title-itable-f {
+  padding: 5px;
   text-align: left;
   font-weight: bold;
   width: fit-content;
