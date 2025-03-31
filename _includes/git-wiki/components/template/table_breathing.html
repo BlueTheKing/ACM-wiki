@@ -1,4 +1,4 @@
-<table>
+<table style="width:fit-content;">
     <tr>
         <th style="padding-left:5px;padding-right:5px;">Item</th>
         <th style="padding-left:5px;padding-right:5px;">Type</th>
@@ -12,16 +12,16 @@
 {% for entry in site.pages %}
     {% if entry.page_category contains 'breathing' %}
     <tr>
-        <td style="text-align:left;width:10%;padding:4px;">
+        <td style="text-align:left;padding:4px;">
             <img src="{{ entry.infobox_image | relative_url }}" height="50"> <a href="{{ entry.title }}">{{ entry.title }}</a>
         </td>
-        <td style="width:9%;padding:0;">
+        <td>
             {{ entry.infobox_item_type }}
         </td>
         <td style="text-align:left;">
             {{ entry.export_use }}
         </td>
-        <td style="padding:0;text-align:center;font-size:18px;">
+        <td style="text-align:center;font-size:18px;">
             {% if entry.infobox_item_usecount > 1 %}
             {{entry.infobox_item_usecount}}x
             {% elsif entry.infobox_item_usecount == 0 %}
@@ -30,7 +30,7 @@
             Single-use
             {% endif %}
         </td>
-        <td style="width:7%;padding:0;">
+        <td>
             {% case entry.infobox_use_category %}
                 {% when "airway" %}
                 <img src="{{ '/wiki/image/category_airway.png' | relative_url }}" height="40"><span style="margin-left:4px;">Airway</span>
@@ -44,7 +44,7 @@
                 <img src="{{ '/wiki/image/category_bandage.png' | relative_url }}" height="40"><span style="margin-left:4px;">Bandage/Fracture</span>
             {% endcase %}
         </td>
-        <td style="width:7%;padding:4px;">
+        <td style="padding:0;">
             {% case entry.infobox_use_selection %}
                 {% when "head" %}
                 <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_head.png' | relative_url }}" height="64" width="64"></div><div class="infobox-selection-text">Head</div>

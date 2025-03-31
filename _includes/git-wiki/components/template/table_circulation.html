@@ -88,7 +88,13 @@
             {{ entry.export_condition }}
         </td>
         <td>
+            {% if entry.infobox_item_weight %}
             {{ entry.infobox_item_weight }}
+            {% else %}
+            {% for weight in entry.infobox_item_weights %}
+                {{ weight }}<br>
+            {% endfor %}
+            {% endif %}
         </td>
     </tr>
     {% endif %}

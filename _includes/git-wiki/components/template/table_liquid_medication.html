@@ -1,4 +1,4 @@
-<table>
+<table style="width:fit-content;">
     <tr>
         <th style="padding-left:5px;padding-right:5px;">Medication</th>
         <th style="padding-left:5px;padding-right:5px;">Use</th>
@@ -24,7 +24,7 @@
         <td style="text-align:left;">
             {{ entry.export_use }}
         </td>
-        <td style="padding:0;">
+        <td>
             {% if entry.infobox_med_route %}
                 {{entry.infobox_med_route}}
             {% elsif entry.infobox_med_iv and entry.infobox_med_im %}
@@ -35,7 +35,7 @@
                 IM Only
             {% endif %}
         </td>
-        <td style="padding:0;">
+        <td>
             {% if entry.infobox_vial_contents_micro %}
             {{ entry.infobox_vial_contents }}mcg/{{ entry.infobox_vial_size }}ml
             {% else %}
@@ -46,7 +46,7 @@
             {% endif %}
             {% endif %}
         </td>
-        <td style="padding:0;">
+        <td>
             {% if entry.infobox_vial_contents and entry.infobox_vial_size %}
             {{ entry.infobox_vial_contents | divided_by: entry.infobox_vial_size }}{% if entry.infobox_vial_contents_micro %}mcg{% else %}mg{% endif %}/ml
             {% endif %}

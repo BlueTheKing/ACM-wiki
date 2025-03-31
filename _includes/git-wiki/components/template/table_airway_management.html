@@ -1,7 +1,7 @@
-<table>
+<table style="width:fit-content;">
     <tr>
         <th style="padding-left:5px;padding-right:5px;">Item</th>
-        <th style="padding-left:5px;padding-right:5px;min-width:7%;">Type</th>
+        <th style="padding-left:5px;padding-right:5px;">Type</th>
         <th style="padding-left:5px;padding-right:5px;">Use</th>
         <th style="padding-left:5px;padding-right:5px;">Use Count</th>
         <th style="padding-left:5px;padding-right:5px;">Access Body Part</th>
@@ -14,13 +14,13 @@
         <td style="text-align:left;width:fit-content;padding:4px;">
             <img src="{{ entry.infobox_image | relative_url }}" height="50"> <a href="{{ entry.title }}">{{ entry.title }}</a>
         </td>
-        <td style="padding:0;">
+        <td>
             {{ entry.infobox_item_type }}
         </td>
         <td style="text-align:left;">
             {{ entry.export_use }}
         </td>
-        <td style="padding:0;text-align:center;font-size:18px;">
+        <td style="text-align:center;font-size:18px;">
             {% if entry.infobox_item_usecount > 1 %}
             {{entry.infobox_item_usecount}}x
             {% elsif entry.infobox_item_usecount == 0 %}
@@ -29,7 +29,7 @@
             Single-use
             {% endif %}
         </td>
-        <td style="width:7%;padding:4px;">
+        <td style="padding:0;">
             {% case entry.infobox_use_selection %}
                 {% when "head" %}
                 <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_head.png' | relative_url }}" height="64" width="64"></div><div class="infobox-selection-text">Head</div>

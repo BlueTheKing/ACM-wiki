@@ -27,7 +27,9 @@ infobox_item_type: "Fluid Bag"
 
 infobox_item_nonmedication: true
 
-infobox_item_weight: "0.02kg / 0.05lb"
+infobox_item_weights:
+- "0.11kg / 0.25lb"
+- "0.23kg / 0.5lb"
 ---
 
 {% include git-wiki/components/infobox/item_infobox.html %}

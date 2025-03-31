@@ -34,7 +34,11 @@ infobox_item_usecount: 0
 
 infobox_item_nonmedication: true
 
-infobox_item_weight: "0.02kg / 0.05lb"
+infobox_item_weights:
+- "0.02kg / 0.05lb"
+- "0.03kg / 0.06lb"
+- "0.03kg / 0.07lb"
+- "0.04kg / 0.09lb"
 
 infobox_item_classnames:
 - "ACM_Syringe_1"
