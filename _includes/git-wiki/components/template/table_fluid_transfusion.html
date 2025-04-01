@@ -10,15 +10,7 @@
     {% if entry.page_category contains 'fluid_transfusion' %}
     <tr>
         <td style="text-align:left;">
-            <img src="{{ entry.infobox_image | relative_url }}" height="50"> {% if entry.infobox_item_multiitem %}
-            <a href="{{ entry.title }}">{{ entry.title }}</a> <span style="font-size:11px;">(
-                {%- for text in entry.infobox_item_multiitem_variants %}
-                {{- text }}{% unless forloop.last %} | {% endunless -%}
-                {% endfor -%}
-            )</span>
-            {% else %}
-            <a href="{{ entry.title }}">{{ entry.title }}</a>
-            {% endif %}
+            {% include git-wiki/components/template/section_table_item.html image=entry.infobox_image name=entry.title multiitem=entry.infobox_item_multiitem variants=entry.infobox_item_multiitem_variants %}
         </td>
         <td>
             {{ entry.infobox_item_type }}
@@ -29,14 +21,8 @@
         <td style="text-align:left;">
             {{ entry.export_condition }}
         </td>
-        <td>
-            {% if entry.infobox_item_weight %}
-            {{ entry.infobox_item_weight }}
-            {% else %}
-            {% for weight in entry.infobox_item_weights %}
-                {{ weight }}<br>
-            {% endfor %}
-            {% endif %}
+        <td style="text-align:left;">
+            {% include git-wiki/components/infobox/section_weight.html weight=entry.infobox_item_weight weights=entry.infobox_item_weights %}
         </td>
     </tr>
     {% endif %}

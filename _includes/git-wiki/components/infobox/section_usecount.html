@@ -1,0 +1,7 @@
+{% if include.usecount > 1 %}
+    {{ include.usecount }}x
+{% elsif include.usecount == 0 %}
+    Re-usable
+{% else %}
+    Single-use
+{% endif %}

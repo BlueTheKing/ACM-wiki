@@ -25,31 +25,13 @@
             {{ entry.export_use }}
         </td>
         <td>
-            {% if entry.infobox_med_route %}
-                {{entry.infobox_med_route}}
-            {% elsif entry.infobox_med_iv and entry.infobox_med_im %}
-                IV/IM
-            {% elsif entry.infobox_med_iv %}
-                IV Only
-            {% else %}
-                IM Only
-            {% endif %}
+            {% include git-wiki/components/infobox/section_med_route.html is_autoinjector=entry.infobox_med_autoinjector route=entry.infobox_med_route has_iv=entry.infobox_med_iv has_im=entry.infobox_med_im %}
         </td>
         <td>
-            {% if entry.infobox_vial_contents_micro %}
-            {{ entry.infobox_vial_contents }}mcg/{{ entry.infobox_vial_size }}ml
-            {% else %}
-            {% if entry.infobox_vial_contents >= 1000 %}
-            {{ entry.infobox_vial_contents | divided_by: 1000 }}g/{{ entry.infobox_vial_size }}ml
-            {% else %}
-            {{ entry.infobox_vial_contents }}mg/{{ entry.infobox_vial_size }}ml
-            {% endif %}
-            {% endif %}
+            {% include git-wiki/components/infobox/section_med_contents_concentration.html is_micro=entry.infobox_vial_contents_micro contents=entry.infobox_vial_contents container_size=entry.infobox_vial_size %}
         </td>
         <td>
-            {% if entry.infobox_vial_contents and entry.infobox_vial_size %}
-            {{ entry.infobox_vial_contents | divided_by: entry.infobox_vial_size }}{% if entry.infobox_vial_contents_micro %}mcg{% else %}mg{% endif %}/ml
-            {% endif %}
+            {% include git-wiki/components/infobox/section_med_concentration.html is_micro=entry.infobox_vial_contents_micro contents=entry.infobox_vial_contents container_size=entry.infobox_vial_size %}
         </td>
         <td style="text-align:left;">
             {% if entry.export_doserange %}

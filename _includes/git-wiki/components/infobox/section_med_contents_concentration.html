@@ -1,0 +1,9 @@
+{% if include.is_micro %}
+    {{ include.contents }}mcg/{{ include.container_size }}ml
+{% else %}
+{% if include.contents >= 1000 %}
+    {{ include.contents | divided_by: 1000 }}g/{{ include.container_size }}ml
+{% else %}
+    {{ include.contents }}mg/{{ include.container_size }}ml
+{% endif %}
+{% endif %}

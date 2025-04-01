@@ -1,0 +1,13 @@
+{% if include.is_autoinjector %}
+    IM
+{% else %}
+{% if include.route %}
+    {{ include.route }}
+{% elsif include.has_iv and include.has_im %}
+    IV/IM
+{% elsif include.has_iv %}
+    IV Only
+{% else %}
+    IM Only
+{% endif %}
+{% endif %}

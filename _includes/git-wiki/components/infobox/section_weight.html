@@ -1,0 +1,7 @@
+{% if include.weight %}
+    {{ include.weight }}
+{% else %}
+{% for weight in include.weights %}
+    {{ weight }}<br>
+{% endfor %}
+{% endif %}

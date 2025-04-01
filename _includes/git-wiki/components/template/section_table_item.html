@@ -1,0 +1,7 @@
+<img src="{{ include.image | relative_url }}" height="50"><a href="{{ include.name }}">{{ include.name }}</a>{% if include.multiitem %}
+ <span style="font-size:11px;">(
+    {%- for text in include.variants %}
+    {{- text }}{% unless forloop.last %} | {% endunless -%}
+    {% endfor -%}
+)</span>
+{% endif %}

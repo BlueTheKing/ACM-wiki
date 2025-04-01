@@ -1,0 +1,9 @@
+{% if include.is_micro %}
+    {{ include.contents }}mcg
+{% else %}
+{% if include.contents >= 1000 %}
+    {{ include.contents }}mg <span style="font-size:12px;vertical-align:text-top;">({{ include.contents | divided_by: 1000 }}g)</span>
+{% else %}
+    {{ include.contents }}mg
+{% endif %}
+{% endif %}

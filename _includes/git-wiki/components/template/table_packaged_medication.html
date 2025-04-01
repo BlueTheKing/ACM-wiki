@@ -25,44 +25,13 @@
             {{ entry.export_use }}
         </td>
         <td style="padding:0;">
-            {% if entry.infobox_med_autoinjector %}
-                IM
-            {% else %}
-            {% if entry.infobox_med_route %}
-                {{entry.infobox_med_route}}
-            {% elsif entry.infobox_med_iv and entry.infobox_med_im %}
-                IV/IM
-            {% elsif entry.infobox_med_iv %}
-                IV Only
-            {% else %}
-                IM Only
-            {% endif %}
-            {% endif %}
+            {% include git-wiki/components/infobox/section_med_route.html is_autoinjector=entry.infobox_med_autoinjector route=entry.infobox_med_route has_iv=entry.infobox_med_iv has_im=entry.infobox_med_im %}
         </td>
         <td style="padding:0;">
-            {% case entry.infobox_use_selection %}
-                {% when "head" %}
-                <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_head.png' | relative_url }}" height="64" width="64"></div><div class="infobox-selection-text">Head</div>
-                {% when "arms" %}
-                <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_arms.png' | relative_url }}" height="64" width="64"></div><div class="infobox-selection-text">Arms</div>
-                {% when "limbs" %}
-                <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_limbs.png' | relative_url }}" height="64" width="64"></div><div class="infobox-selection-text">Arms<br>Legs</div>
-                {% when "torso" %}
-                <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_torso.png' | relative_url }}" height="64" width="64"></div><div class="infobox-selection-text">Torso</div>
-                {% when "body" %}
-                <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_torso_limbs.png' | relative_url }}" height="64" width="64"></div><div class="infobox-selection-text">Torso<br>Arms<br>Legs</div>
-                {% else %}
-                <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_all.png' | relative_url }}" height="64" width="64"></div><div class="infobox-selection-text" style="width:50%;">All</div>
-            {% endcase %}
+            {% include git-wiki/components/infobox/section_targetpart.html selection=entry.infobox_use_selection %}
         </td>
         <td style="text-align:center;font-size:18px;">
-            {% if entry.infobox_item_usecount > 1 %}
-            {{entry.infobox_item_usecount}}x
-            {% elsif entry.infobox_item_usecount == 0 %}
-            Re-usable
-            {% else %}
-            Single-use
-            {% endif %}
+            {% include git-wiki/components/infobox/section_usecount.html usecount=entry.infobox_item_usecount %}
         </td>
         <td style="text-align:left;">
             {% if entry.export_doserange %}

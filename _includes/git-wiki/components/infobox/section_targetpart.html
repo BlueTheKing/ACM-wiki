@@ -1,0 +1,16 @@
+{% case include.selection %}
+{% when "head" %}
+<div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_head.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Head</div>
+{% when "arms" %}
+<div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_arms.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Arms</div>
+{% when "limbs" %}
+<div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_limbs.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Arms<br>Legs</div>
+{% when "torso" %}
+<div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_torso.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Torso</div>
+{% when "upper" %}
+<div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_head_torso_arms.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Head<br>Torso<br>Arms</div>
+{% when "body" %}
+<div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_torso_limbs.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Torso<br>Arms<br>Legs</div>
+{% else %}
+<div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_all.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">All</div>
+{% endcase %}

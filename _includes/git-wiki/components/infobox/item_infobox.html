@@ -105,81 +105,25 @@ infobox_med_nausea: string
                 <tr class="infobox-row">
                     {% if page.infobox_item_type %}<td class="infobox-row-title-itable">{% else %}<td class="infobox-row-title-itable-f">{% endif %}Category</td>
                     {% if page.infobox_item_type %}<td class="infobox-row-itable" style="padding:5px 0 5px 0;">{% else %}<td class="infobox-row-itable-f" style="padding:5px 0 5px 0;">{% endif %}
-                        {% case page.infobox_use_category %}
-                            {% when "airway" %}
-                            <img src="{{ '/wiki/image/category_airway.png' | relative_url }}" height="32"><span style="margin-left:4px;">Airway</span>
-                            {% when "advanced" %}
-                            <img src="{{ '/wiki/image/category_advanced.png' | relative_url }}" height="32"><span style="margin-left:4px;">Advanced Treatment</span>
-                            {% when "examine" %}
-                            <img src="{{ '/wiki/image/category_examine.png' | relative_url }}" height="32"><span style="margin-left:4px;">Examine</span>
-                            {% when "medication" %}
-                            <img src="{{ '/wiki/image/category_medication.png' | relative_url }}" height="32"><span style="margin-left:4px;">Medication</span>
-                            {% when "transfusion" %}
-                            <img src="{{ '/wiki/image/category_advanced.png' | relative_url }}" height="32"><span style="margin-left:4px;">Transfusion</span>
-                            {% else %}
-                            <img src="{{ '/wiki/image/category_bandage.png' | relative_url }}" height="32"><span style="margin-left:4px;">Bandage/Fracture</span>
-                        {% endcase %}
-                        {% if page.infobox_use_category2 %}
-                        <br><div style="float:left;margin-left:13px;">
-                        {% case page.infobox_use_category2 %}
-                            {% when "airway" %}
-                            <img src="{{ '/wiki/image/category_airway.png' | relative_url }}" height="32"><span style="margin-left:4px;">Airway</span>
-                            {% when "advanced" %}
-                            <img src="{{ '/wiki/image/category_advanced.png' | relative_url }}" height="32"><span style="margin-left:4px;">Advanced Treatment</span>
-                            {% when "examine" %}
-                            <img src="{{ '/wiki/image/category_examine.png' | relative_url }}" height="32"><span style="margin-left:4px;">Examine</span>
-                            {% when "medication" %}
-                            <img src="{{ '/wiki/image/category_medication.png' | relative_url }}" height="32"><span style="margin-left:4px;">Medication</span>
-                            {% else %}
-                            <img src="{{ '/wiki/image/category_bandage.png' | relative_url }}" height="32"><span style="margin-left:4px;">Bandage/Fracture</span>
-                        {% endcase %}
-                        </div>
-                        {% endif %}
+                        {% include git-wiki/components/infobox/section_category.html category=page.infobox_use_category category2=page.infobox_use_category2 %}
                     </td>
                 </tr>
                 <tr class="infobox-row">
                     <td class="infobox-row-title-itable">Action Access</td>
                     <td class="infobox-row-itable">
-                        {% case page.infobox_use_selection %}
-                        {% when "head" %}
-                        <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_head.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Head</div>
-                        {% when "arms" %}
-                        <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_arms.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Arms</div>
-                        {% when "limbs" %}
-                        <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_limbs.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Arms<br>Legs</div>
-                        {% when "torso" %}
-                        <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_torso.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Torso</div>
-                        {% when "upper" %}
-                        <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_head_torso_arms.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Head<br>Torso<br>Arms</div>
-                        {% when "body" %}
-                        <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_torso_limbs.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">Torso<br>Arms<br>Legs</div>
-                        {% else %}
-                        <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_all.png' | relative_url }}" height="64"></div><div class="infobox-selection-text">All</div>
-                        {% endcase %}
+                        {% include git-wiki/components/infobox/section_targetpart.html selection=page.infobox_use_selection %}
                     </td>
                 </tr>
                 <tr class="infobox-row">
                     <td class="infobox-row-title-itable">Use Count</td>
                     <td class="infobox-row-itable">
-                        {% if page.infobox_item_usecount > 1 %}
-                        {{page.infobox_item_usecount}}x
-                        {% elsif page.infobox_item_usecount == 0 %}
-                        Re-usable
-                        {% else %}
-                        Single-use
-                        {% endif %}
+                        {% include git-wiki/components/infobox/section_usecount.html usecount=page.infobox_item_usecount %}
                     </td>
                 </tr>
                 <tr class="infobox-row">
                     <td class="infobox-row-title-itable">Weight</td>
                     <td class="infobox-row-itable">
-                        {% if page.infobox_item_weight %}
-                        {{ page.infobox_item_weight }}
-                        {% else %}
-                        {% for weight in page.infobox_item_weights %}
-                            {{ weight }}<br>
-                        {% endfor %}
-                        {% endif %}
+                        {% include git-wiki/components/infobox/section_weight.html weight=page.infobox_item_weight weights=page.infobox_item_weights %}
                     </td>
                 </tr>
             </table>
@@ -199,21 +143,15 @@ infobox_med_nausea: string
     <tr class="infobox-row">
         <td class="infobox-row-title" style="min-width:40%;">{% if page.infobox_vial_type %}{{ page.infobox_vial_type }}{% else %}Vial{% endif %} Contents</td>
         <td>
-            {% if page.infobox_vial_contents_micro %}
-            {{ page.infobox_vial_contents }}mcg
-            {% else %}
-            {% if page.infobox_vial_contents >= 1000 %}
-            {{ page.infobox_vial_contents }}mg <span style="font-size:12px;vertical-align:text-top;">({{ page.infobox_vial_contents | divided_by: 1000 }}g)</span>
-            {% else %}
-            {{ page.infobox_vial_contents }}mg
-            {% endif %}
-            {% endif %}
+            {% include git-wiki/components/infobox/section_med_contents.html is_micro=page.infobox_vial_contents_micro contents=page.infobox_vial_contents %}
         </td>
     </tr>
     {% if page.infobox_vial_contents and page.infobox_vial_size %}
     <tr class="infobox-row">
         <td class="infobox-row-title" style="min-width:40%;">{% if page.infobox_vial_type %}{{ page.infobox_vial_type }}{% else %}Vial{% endif %} Concentration</td>
-        <td>{{ page.infobox_vial_contents | divided_by: page.infobox_vial_size }}{% if page.infobox_vial_contents_micro %}mcg{% else %}mg{% endif %}/ml</td>
+        <td>
+            {% include git-wiki/components/infobox/section_med_concentration.html is_micro=page.infobox_vial_contents_micro contents=page.infobox_vial_contents container_size=page.infobox_vial_size %}
+        </td>
     </tr>
     {% endif %}
     {% endif %}
@@ -223,19 +161,7 @@ infobox_med_nausea: string
     <tr class="infobox-row">
         <td class="infobox-row-title" style="min-width:40%;">Route(s) of administration</td>
         <td>
-            {% if page.infobox_med_autoinjector %}
-                IM
-            {% else %}
-            {% if page.infobox_med_route %}
-                {{page.infobox_med_route}}
-            {% elsif page.infobox_med_iv and page.infobox_med_im %}
-                IV/IM
-            {% elsif page.infobox_med_iv %}
-                IV Only
-            {% else %}
-                IM Only
-            {% endif %}
-            {% endif %}
+            {% include git-wiki/components/infobox/section_med_route.html is_autoinjector=page.infobox_med_autoinjector route=page.infobox_med_route has_iv=page.infobox_med_iv has_im=page.infobox_med_im %}
         </td>
     </tr>
     {% if page.infobox_med_dose %}
