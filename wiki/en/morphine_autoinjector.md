@@ -18,6 +18,7 @@ infobox_image: "/wiki/image/autoinjector_morphine.png"
 infobox_use_category: "medication"
 infobox_use_selection: "body"
 
+infobox_item_type: "Analgesic Opioid Autoinjector"
 infobox_item_weight: "0.05kg | 0.10lb"
 
 infobox_item_classname: "ACE_morphine"
