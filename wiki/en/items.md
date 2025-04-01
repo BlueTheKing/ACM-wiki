@@ -38,3 +38,7 @@ Packaged Medication come in various shapes or inside devices with a pre-designat
 These medication devices are designed to be easily self-administered or given in an emergency.
 
 {% include git-wiki/components/template/table_packaged_medication.html %}
+
+# Disability
+
+{% include git-wiki/components/template/table_disability.html %}

@@ -3,8 +3,8 @@
         <th style="padding-left:5px;padding-right:5px;">Item</th>
         <th style="padding-left:5px;padding-right:5px;">Type</th>
         <th style="padding-left:5px;padding-right:5px;">Use</th>
-        <th style="padding-left:5px;padding-right:5px;">Use Count</th>
         <th style="padding-left:5px;padding-right:5px;">Access Body Part</th>
+        <th style="padding-left:5px;padding-right:5px;">Use Count</th>
         <th style="padding-left:5px;padding-right:5px;">Condition</th>
         <th style="padding-left:5px;padding-right:5px;">Weight</th>
     </tr>
@@ -19,15 +19,6 @@
         </td>
         <td style="text-align:left;">
             {{ entry.export_use }}
-        </td>
-        <td style="text-align:center;font-size:18px;">
-            {% if entry.infobox_item_usecount > 1 %}
-            {{entry.infobox_item_usecount}}x
-            {% elsif entry.infobox_item_usecount == 0 %}
-            Re-usable
-            {% else %}
-            Single-use
-            {% endif %}
         </td>
         <td style="padding:0;">
             {% case entry.infobox_use_selection %}
@@ -44,6 +35,15 @@
                 {% else %}
                 <div class="infobox-selection-img"><img src="{{ '/assets/images/infobox/body_select_all.png' | relative_url }}" height="64" width="64"></div><div class="infobox-selection-text" style="width:50%;">All</div>
             {% endcase %}
+        </td>
+        <td style="text-align:center;font-size:18px;">
+            {% if entry.infobox_item_usecount > 1 %}
+            {{entry.infobox_item_usecount}}x
+            {% elsif entry.infobox_item_usecount == 0 %}
+            Re-usable
+            {% else %}
+            Single-use
+            {% endif %}
         </td>
         <td style="text-align:left;">
             {{ entry.export_condition }}

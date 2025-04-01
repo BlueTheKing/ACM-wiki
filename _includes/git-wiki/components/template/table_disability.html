@@ -10,9 +10,9 @@
         <th style="padding-left:5px;padding-right:5px;">Weight</th>
     </tr>
 {% for entry in site.pages %}
-    {% if entry.page_category contains 'circulation' and entry.page_category contains 'device' %}
+    {% if entry.page_category contains 'disability' %}
     <tr>
-        <td style="text-align:left;padding:4px;">
+        <td style="text-align:left;">
             <img src="{{ entry.infobox_image | relative_url }}" height="50"> {% if entry.infobox_item_multiitem %}
             <a href="{{ entry.title }}">{{ entry.title }}</a> <span style="font-size:11px;">(
                 {%- for text in entry.infobox_item_multiitem_variants %}
@@ -42,20 +42,6 @@
                 {% else %}
                 <img src="{{ '/wiki/image/category_bandage.png' | relative_url }}" height="40"><span style="margin-left:4px;">Bandage/Fracture</span>
             {% endcase %}
-            {% if entry.infobox_use_category2 %}<br>
-            {% case entry.infobox_use_category2 %}
-                {% when "airway" %}
-                <img src="{{ '/wiki/image/category_airway.png' | relative_url }}" height="40"><span style="margin-left:4px;">Airway</span>
-                {% when "advanced" %}
-                <img src="{{ '/wiki/image/category_advanced.png' | relative_url }}" height="40"><span style="margin-left:4px;">Advanced Treatment</span>
-                {% when "examine" %}
-                <img src="{{ '/wiki/image/category_examine.png' | relative_url }}" height="40"><span style="margin-left:4px;">Examine</span>
-                {% when "medication" %}
-                <img src="{{ '/wiki/image/category_medication.png' | relative_url }}" height="40"><span style="margin-left:4px;">Medication</span>
-                {% else %}
-                <img src="{{ '/wiki/image/category_bandage.png' | relative_url }}" height="40"><span style="margin-left:4px;">Bandage/Fracture</span>
-            {% endcase %}
-            {% endif %}
         </td>
         <td style="padding:0;">
             {% case entry.infobox_use_selection %}
