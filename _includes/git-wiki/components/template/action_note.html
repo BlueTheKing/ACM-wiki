@@ -1,0 +1,16 @@
+<div style="margin:0 0 10px 10px;">
+The **{{ include.name }}** action is available on the **{{ include.bodypart }}** in the {% case include.category %}
+{% when "airway" %}
+<img src="{{ '/wiki/image/category_airway.png' | relative_url }}" height="40"><span style="margin-left:4px;font-weight:bold;">Airway/Breathing</span>
+{% when "advanced" %}
+<img src="{{ '/wiki/image/category_advanced.png' | relative_url }}" height="40"><span style="margin-left:4px;font-weight:bold;">Advanced Treatment</span>
+{% when "examine" %}
+<img src="{{ '/wiki/image/category_examine.png' | relative_url }}" height="40"><span style="margin-left:4px;font-weight:bold;">Examine</span>
+{% when "medication" %}
+<img src="{{ '/wiki/image/category_medication.png' | relative_url }}" height="40"><span style="margin-left:4px;font-weight:bold;">Medication</span>
+{% when "transfusion" %}
+<img src="{{ '/wiki/image/category_transfusion.png' | relative_url }}" height="40"><span style="margin-left:4px;font-weight:bold;">Transfusion</span>
+{% else %}
+<img src="{{ '/wiki/image/category_bandage.png' | relative_url }}" height="40"><span style="margin-left:4px;font-weight:bold;">Bandage/Fracture</span>
+{% endcase %} Tab
+</div>

@@ -541,8 +541,9 @@ code {
 }
 
 table.infobox {
-  align: right;
+  float: right;
   width: 15%;
+  background-color: #0F0F0F; 
 };
 
 .infobox > * > * > td {
