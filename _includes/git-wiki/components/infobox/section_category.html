@@ -1,6 +1,6 @@
 {% case include.category %}
     {% when "airway" %}
-    <img src="{{ '/wiki/image/category_airway.png' | relative_url }}" height="{{ include.image_size | default: 32 }}"><span style="margin-left:4px;">Airway</span>
+    <img src="{{ '/wiki/image/category_airway.png' | relative_url }}" height="{{ include.image_size | default: 32 }}"><span style="margin-left:4px;">Airway/Breathing</span>
     {% when "advanced" %}
     <img src="{{ '/wiki/image/category_advanced.png' | relative_url }}" height="{{ include.image_size | default: 32 }}"><span style="margin-left:4px;">Advanced Treatment</span>
     {% when "examine" %}
@@ -8,7 +8,7 @@
     {% when "medication" %}
     <img src="{{ '/wiki/image/category_medication.png' | relative_url }}" height="{{ include.image_size | default: 32 }}"><span style="margin-left:4px;">Medication</span>
     {% when "transfusion" %}
-    <img src="{{ '/wiki/image/category_advanced.png' | relative_url }}" height="{{ include.image_size | default: 32 }}"><span style="margin-left:4px;">Transfusion</span>
+    <img src="{{ '/wiki/image/category_transfusion.png' | relative_url }}" height="{{ include.image_size | default: 32 }}"><span style="margin-left:4px;">Transfusion</span>
     {% else %}
     <img src="{{ '/wiki/image/category_bandage.png' | relative_url }}" height="{{ include.image_size | default: 32 }}"><span style="margin-left:4px;">Bandage/Fracture</span>
 {% endcase %}
@@ -16,7 +16,7 @@
 <br>
 {% case include.category2 %}
     {% when "airway" %}
-    <img src="{{ '/wiki/image/category_airway.png' | relative_url }}" height="{{ include.image_size | default: 32 }}"><span style="margin-left:4px;">Airway</span>
+    <img src="{{ '/wiki/image/category_airway.png' | relative_url }}" height="{{ include.image_size | default: 32 }}"><span style="margin-left:4px;">Airway/Breathing</span>
     {% when "advanced" %}
     <img src="{{ '/wiki/image/category_advanced.png' | relative_url }}" height="{{ include.image_size | default: 32 }}"><span style="margin-left:4px;">Advanced Treatment</span>
     {% when "examine" %}
