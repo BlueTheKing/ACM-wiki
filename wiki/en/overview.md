@@ -467,7 +467,7 @@ Syringes
         <td class="medication-table">Managing moderate to severe pain</td>
         <td>IM</td>
         <td>1x</td>
-        <td class="medication-table">1 injection (10mg IM equivalent)</td>
+        <td class="medication-table">1 injection (5mg IM equivalent)</td>
         <td><2m</td>
         <td>~20m</td>
         <td>~30m</td>
@@ -677,7 +677,7 @@ The blood type can be checked on the patient's dog tag.
     </tr>
     <tr>
         <td class="blood-type-table">O-</td>
-        <td class="blood-type-table">X</td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td> 
         <td class="blood-type-table"></td>
         <td class="blood-type-table"></td>
         <td class="blood-type-table"></td>
@@ -688,8 +688,8 @@ The blood type can be checked on the patient's dog tag.
     </tr>
     <tr>
         <td class="blood-type-table">O+</td>
-        <td class="blood-type-table">X</td>
-        <td class="blood-type-table">X</td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
         <td class="blood-type-table"></td>
         <td class="blood-type-table"></td>
         <td class="blood-type-table"></td>
@@ -699,9 +699,9 @@ The blood type can be checked on the patient's dog tag.
     </tr>
     <tr>
         <td class="blood-type-table">A-</td>
-        <td class="blood-type-table">X</td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
         <td class="blood-type-table"></td>
-        <td class="blood-type-table">X</td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
         <td class="blood-type-table"></td>
         <td class="blood-type-table"></td>
         <td class="blood-type-table"></td>
@@ -710,10 +710,10 @@ The blood type can be checked on the patient's dog tag.
     </tr>
     <tr>
         <td class="blood-type-table">A+</td>
-        <td class="blood-type-table">X</td>
-        <td class="blood-type-table">X</td>
-        <td class="blood-type-table">X</td>
-        <td class="blood-type-table">X</td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
         <td class="blood-type-table"></td>
         <td class="blood-type-table"></td>
         <td class="blood-type-table"></td>
@@ -721,47 +721,47 @@ The blood type can be checked on the patient's dog tag.
     </tr>
     <tr>
         <td class="blood-type-table">B-</td>
-        <td class="blood-type-table">X</td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
         <td class="blood-type-table"></td>
         <td class="blood-type-table"></td>
         <td class="blood-type-table"></td>
-        <td class="blood-type-table">X</td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
         <td class="blood-type-table"></td>
         <td class="blood-type-table"></td>
         <td class="blood-type-table"></td>
     </tr>
     <tr>
         <td class="blood-type-table">B+</td>
-        <td class="blood-type-table">X</td>
-        <td class="blood-type-table">X</td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
         <td class="blood-type-table"></td>
         <td class="blood-type-table"></td>
-        <td class="blood-type-table">X</td>
-        <td class="blood-type-table">X</td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
         <td class="blood-type-table"></td>
         <td class="blood-type-table"></td>
     </tr>
     <tr>
         <td class="blood-type-table">AB-</td>
-        <td class="blood-type-table">X</td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
         <td class="blood-type-table"></td>
-        <td class="blood-type-table">X</td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
         <td class="blood-type-table"></td>
-        <td class="blood-type-table">X</td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
         <td class="blood-type-table"></td>
-        <td class="blood-type-table">X</td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
         <td class="blood-type-table"></td>
     </tr>
     <tr>
         <td class="blood-type-table">AB+</td>
-        <td class="blood-type-table">X</td>
-        <td class="blood-type-table">X</td>
-        <td class="blood-type-table">X</td>
-        <td class="blood-type-table">X</td>
-        <td class="blood-type-table">X</td>
-        <td class="blood-type-table">X</td>
-        <td class="blood-type-table">X</td>
-        <td class="blood-type-table">X</td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
+        <td class="blood-type-table"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Blood_drop_plain.svg" width="64"></td>
     </tr>
 </table>
 
