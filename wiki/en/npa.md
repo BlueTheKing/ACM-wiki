@@ -43,8 +43,7 @@ The NPA does not prevent {% include hl.html t="Airway Obstructions" l="Airway_Ob
 {% include git-wiki/components/template/action_note.html name="Insert NPA" bodypart="Head" category="airway" %}
 
 The NPA can be removed at any point, and will be automatically removed upon the patient waking up.
-<br><br>
-- **{% include hl.html t="Head Tilt-Chin Lift" %} -** If the patient has severe airway collapse a head tilt-chin lift can be performed with an NPA inserted.
+- **{% include hl.html t="Head Tilt-Chin Lift" %} -** If the patient has severe airway collapse a head tilt-chin lift can be performed with an NPA inserted to mitigate the collapse and keep the airway open.
 - **Recovery Position -** If the patient is placed into the recovery position inserting a NPA will cancel the recovery position.
 - **{% include hl.html t="CPR" %} and {% include hl.html t="BVM" i="/wiki/image/bvm.png" %} -** An inserted NPA does not allow simultaneous CPR and BVM use.
 

@@ -47,7 +47,7 @@ The guedel tube does not prevent {% include hl.html t="Airway Obstructions" l="A
 
 The Guedel Tube can be removed at any point, and will be automatically removed upon the patient waking up.
 <br><br>
-- **{% include hl.html t="Head Tilt-Chin Lift" %} -** If the patient has severe airway collapse a head tilt-chin lift can be performed with a guedel tube inserted.
+- **{% include hl.html t="Head Tilt-Chin Lift" %} -** If the patient has severe airway collapse a head tilt-chin lift can be performed with a guedel tube inserted to mitigate the collapse and keep the airway open.
 - **Recovery Position -** If the patient is placed into the recovery position inserting a guedel tube will cancel the recovery position.
 - **{% include hl.html t="CPR" %} and {% include hl.html t="BVM" i="/wiki/image/bvm.png" %} -** An inserted guedel tube does not allow simultaneous CPR and BVM use.
 
