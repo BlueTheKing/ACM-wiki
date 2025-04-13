@@ -61,7 +61,7 @@ Medications require a {% include hl.html t="Syringe" i="/wiki/image/syringe_5.pn
 IV access is achieved with IV Catheters or IO devices.
 
 ## Dosing
-1mg IV push every 5 minutes during cardiac arrest
+Push 1mg IV every 5 minutes during cardiac arrest
 
 ## Effects
 {% include git-wiki/components/template/section_med_effects.html %}
