@@ -31,8 +31,8 @@ infobox_med_onset: "<3s"
 infobox_med_peak: "<6s"
 infobox_med_duration: "<40s"
 
-infobox_med_effect_hr: "+"
-infobox_med_effect_rr: "++"
+infobox_med_effect_hr: 1
+infobox_med_effect_rr: 2
 ---
 
 {% include git-wiki/components/infobox/item_infobox.html %}

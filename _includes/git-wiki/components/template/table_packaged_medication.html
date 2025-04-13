@@ -76,19 +76,19 @@
         <td style="padding:2px;width:54px;font-size:16px;font-weight:bold;">
             {% if entry.infobox_med_effect_hr %}
             {% if entry.infobox_med_effect_hr_route %}<span style="font-size:12px;vertical-align:text-top;">({{ entry.infobox_med_effect_hr_route }})</span>{% endif %}
-            <span style="letter-spacing:2px;">{{ entry.infobox_med_effect_hr }}</span>
+            <span style="letter-spacing:-1px;">{% include git-wiki/components/infobox/section_effect_strength.html strength=entry.infobox_med_effect_hr %}</span>
             {% endif %}
         </td>
         <td style="padding:2px;width:54px;font-size:16px;font-weight:bold;">
             {% if entry.infobox_med_effect_bp %}
             {% if entry.infobox_med_effect_bp_route %}<span style="font-size:12px;vertical-align:text-top;">({{ entry.infobox_med_effect_bp_route }})</span>{% endif %}
-            <span style="letter-spacing:2px;">{{ entry.infobox_med_effect_bp }}</span>
+            <span style="letter-spacing:-1px;">{% include git-wiki/components/infobox/section_effect_strength.html strength=entry.infobox_med_effect_bp %}</span>
             {% endif %}
         </td>
         <td style="padding:2px;width:54px;font-size:16px;font-weight:bold;">
             {% if entry.infobox_med_effect_rr %}
             {% if entry.infobox_med_effect_rr_route %}<span style="font-size:12px;vertical-align:text-top;">({{ entry.infobox_med_effect_rr_route }})</span>{% endif %}
-            <span style="letter-spacing:2px;">{{ entry.infobox_med_effect_rr }}</span>
+            <span style="letter-spacing:-1px;">{% include git-wiki/components/infobox/section_effect_strength.html strength=entry.infobox_med_effect_rr %}</span>
             {% endif %}
         </td>
         <td>

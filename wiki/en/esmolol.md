@@ -32,7 +32,45 @@ infobox_med_iv_duration: "~5m"
 
 infobox_med_im: false
 
-infobox_med_effect_hr: "--"
+infobox_med_effect_hr: -2
 ---
 
 {% include git-wiki/components/infobox/item_infobox.html %}
+
+Esmolol is a medication used to lower heart rate and blood pressure.
+
+# Function
+Esmolol is used in the case of severe tachycardia and hypertension, as a beta-blocker it performs both functions by lowering the force of heart contractions.
+
+Esmolol is administered intravenously with a rapid onset, short peak and duration.
+
+Esmolol has no effect if administered intramuscularly.
+
+# Usage
+{% include git-wiki/components/template/action_note.html name="Use Syringe" bodypart="Torso and Limbs" category="medication" %}
+{% include git-wiki/components/template/action_note.html name="Push Esmolol" bodypart="Torso and Limbs" category="medication" %}
+
+Medications require a {% include hl.html t="Syringe" i="/wiki/image/syringe_5.png" %} to be able to be drawn and administered.
+
+IV access is achieved with IV Catheters or IO devices.
+
+## Dosing
+Push 0.25-0.5mg/kg IV, depending on required effect
+
+## Effects
+{% include git-wiki/components/template/section_med_effects.html %}
+
+#### Potential Complications
+- Bradycardia
+- Hypotension
+- Cardiac Arrest
+
+## Indications
+- Sinus Tachycardia
+
+## Contraindications
+- Bradycardia
+- Hypotension
+
+# Real Life Notes
+- [Esmolol (Wikipedia)](https://en.wikipedia.org/wiki/Esmolol)

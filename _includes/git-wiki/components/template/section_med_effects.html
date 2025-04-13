@@ -1,0 +1,3 @@
+- Heart Rate: {% if page.infobox_med_effect_hr %}<span style="font-size:18px;letter-spacing:-1px;">{% else %}<span>{% endif %}{% include git-wiki/components/infobox/section_effect_strength.html strength=page.infobox_med_effect_hr escape=true %}</span>
+- Blood Pressure: {% if page.infobox_med_effect_bp %}<span style="font-size:18px;letter-spacing:-1px;">{% else %}<span>{% endif %}{% include git-wiki/components/infobox/section_effect_strength.html strength=page.infobox_med_effect_bp escape=true %}</span>
+- Respiration Rate: {% if page.infobox_med_effect_rr %}<span style="font-size:18px;letter-spacing:-1px;">{% else %}<span>{% endif %}{% include git-wiki/components/infobox/section_effect_strength.html strength=page.infobox_med_effect_rr escape=true %}</span>

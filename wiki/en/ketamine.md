@@ -41,3 +41,49 @@ infobox_med_nausea: "SIGNIFICANT"
 ---
 
 {% include git-wiki/components/infobox/item_infobox.html %}
+
+Ketamine is a dissociative anesthetic used to manage severe pain and induce sedation.
+
+# Function
+Ketamine is used to combat severe pain caused by injuries or other medical procedures.
+
+Ketamine is very effective at managing severe pain, at theraputic doses the most notable side effect is nausea and dissociation.
+
+At higher doses ketamine can cause more severe nausea and affect the heart rate and breathing ability.
+
+Ketamine is administered intravenously or intramuscularly with a rapid onset, moderate peak and duration.
+
+# Usage
+{% include git-wiki/components/template/action_note.html name="Use Syringe" bodypart="Torso and Limbs" category="medication" %}
+{% include git-wiki/components/template/action_note.html name="Push Ketamine" bodypart="Torso and Limbs" category="medication" %}
+{% include git-wiki/components/template/action_note.html name="Inject Ketamine" bodypart="Torso and Limbs" category="medication" %}
+
+Medications require a {% include hl.html t="Syringe" i="/wiki/image/syringe_5.png" %} to be able to be drawn and administered.
+
+IV access is achieved with IV Catheters or IO devices.
+
+Medications can be administered intramuscularly with just a syringe.
+
+## Dosing
+ANALGESIA:<br>
+**IV:** 0.1-0.2mg/kg or 7.5-21mg<br>
+**IM:** 0.4-0.8mg/kg or 30-84mg
+
+## Effects
+{% include git-wiki/components/template/section_med_effects.html %}
+
+#### Potential Complications
+- Bradycardia
+- Hypoventilation
+- Respiratory Arrest
+- Cardiac Arrest
+
+## Indications
+- Severe Pain
+
+## Contraindications
+- N/A
+
+# Real Life Notes
+- [Ketamine (Wikipedia)](https://en.wikipedia.org/wiki/Ketamine)
+- [Pain Medication (Analgesia) - Ketamine Administration (TCCC.org.ua)](https://tccc.org.ua/en/guide/module-15-pain-medication-analgesia-cmc#n11)

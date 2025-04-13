@@ -237,19 +237,19 @@ infobox_med_nausea: string
                     <td class="infobox-row-itable" style="font-size:18px;">
                         {% if page.infobox_med_effect_hr %}
                         {% if page.infobox_med_effect_hr_route %}<span style="font-size:12px;vertical-align:middle;">({{ page.infobox_med_effect_hr_route }})</span>{% endif %}
-                        <span style="letter-spacing:2px;">{{ page.infobox_med_effect_hr }}</span>
+                        <span style="letter-spacing:-1px;">{% include git-wiki/components/infobox/section_effect_strength.html strength=page.infobox_med_effect_hr %}</span>
                         {% else %}
                         <span style="font-size:12px;vertical-align:middle;">N/A</span>
                         {% endif %} |
                         {% if page.infobox_med_effect_bp %}
                         {% if page.infobox_med_effect_bp_route %}<span style="font-size:12px;vertical-align:middle;">({{ page.infobox_med_effect_bp_route }})</span>{% endif %}
-                        <span style="letter-spacing:2px;">{{ page.infobox_med_effect_bp }}</span>
+                        <span style="letter-spacing:-1px;">{% include git-wiki/components/infobox/section_effect_strength.html strength=page.infobox_med_effect_bp %}</span>
                         {% else %}
                         <span style="font-size:12px;vertical-align:middle;">N/A</span>
                         {% endif %} |
                         {% if page.infobox_med_effect_rr %}
                         {% if page.infobox_med_effect_rr_route %}<span style="font-size:12px;vertical-align:middle;">({{ page.infobox_med_effect_rr_route }})</span>{% endif %}
-                        <span style="letter-spacing:2px;">{{ page.infobox_med_effect_rr }}</span>
+                        <span style="letter-spacing:-1px;">{% include git-wiki/components/infobox/section_effect_strength.html strength=page.infobox_med_effect_rr %}</span> 
                         {% else %}
                         <span style="font-size:12px;vertical-align:middle;">N/A</span>
                         {% endif %}

@@ -1,0 +1,21 @@
+{% if include.escape %}
+    {% case include.strength %}
+    {% when 3 %}\+ + +
+    {%- when 2 %}\+ +
+    {%- when 1 %}\+
+    {%- when -1 %}\-
+    {%- when -2 %}\- -
+    {%- when -3 %}\- - -
+    {%- else %}N/A
+    {%- endcase %}
+{% else %}
+    {% case include.strength %}
+    {% when 3 %}+ + +
+    {%- when 2 %}+ +
+    {%- when 1 %}+
+    {%- when -1 %}-
+    {%- when -2 %}- -
+    {%- when -3 %}- - -
+    {%- else %}N/A
+    {%- endcase %}
+{% endif %}

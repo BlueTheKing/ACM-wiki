@@ -31,8 +31,38 @@ infobox_med_im_onset: "<30s"
 infobox_med_im_peak: "~15m"
 infobox_med_im_duration: "~20m"
 
-infobox_med_effect_hr: "-"
-infobox_med_effect_bp: "-"
+infobox_med_effect_hr: -1
+infobox_med_effect_bp: -1
 ---
 
 {% include git-wiki/components/infobox/item_infobox.html %}
+
+The Midazolam Autoinjector is a device used to easily self administer midazolam to manage seizure activity.
+
+# Function
+The midazolam autoinjector is used to quickly combat seizure activity caused by nerve agent exposure, without requiring dosing of liquid medication.
+
+Midazolam is administered intramuscularly with a quick onset, moderate peak and long duration.
+
+# Usage
+{% include git-wiki/components/template/action_note.html name="Use Midazolam Autoinjector" bodypart="Limbs" category="medication" %}
+
+## Recommended Dose
+Single injection
+
+## Effects
+{% include git-wiki/components/template/section_med_effects.html %}
+
+#### Potential Complications
+- Bradycardia
+- Hypotension
+- Cardiac Arrest
+
+## Indications
+- Nerve Agent Exposure
+
+## Contraindications
+- N/A
+
+# Real Life Notes
+- [Midazolam (Wikipedia)](https://en.wikipedia.org/wiki/Midazolam)

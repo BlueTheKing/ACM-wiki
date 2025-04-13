@@ -33,8 +33,44 @@ infobox_med_iv_duration: "~12m"
 
 infobox_med_im: false
 
-infobox_med_effect_hr: "--"
-infobox_med_effect_bp: "--"
+infobox_med_effect_hr: -2
+infobox_med_effect_bp: -2
 ---
 
 {% include git-wiki/components/infobox/item_infobox.html %}
+
+Amiodarone is a medication used to treat and prevent certain cardiac arrhythmias.
+
+# Function
+Amiodarone is used in the case of shockable cardiac arrest, pushed amiodarone will slow the heart in an attempt to stabilize the rhythm.
+
+Amiodarone is administered intravenously with a rapid onset, moderate peak and duration.
+
+Amiodarone has no effect if administered intramuscularly.
+
+# Usage
+{% include git-wiki/components/template/action_note.html name="Use Syringe" bodypart="Torso and Limbs" category="medication" %}
+{% include git-wiki/components/template/action_note.html name="Push Amiodarone" bodypart="Torso and Limbs" category="medication" %}
+
+Medications require a {% include hl.html t="Syringe" i="/wiki/image/syringe_5.png" %} to be able to be drawn and administered.
+
+IV access is achieved with IV Catheters or IO devices.
+
+## Dosing
+**Cardiac Arrest:** Push 300mg IV, up to 2200mg
+
+## Effects
+{% include git-wiki/components/template/section_med_effects.html %}
+
+#### Potential Complications
+- Bradycardia
+- Cardiac Arrest
+
+## Indications
+- Shockable Cardiac Arrest (PVT/VF)
+
+## Contraindications
+- Bradycardia
+
+# Real Life Notes
+- [Amiodarone (Wikipedia)](https://en.wikipedia.org/wiki/Amiodarone)

@@ -35,6 +35,45 @@ infobox_med_iv_peak: "~5m"
 infobox_med_iv_duration: "~10m"
 
 infobox_med_im: false
+
+infobox_med_effect_hr: 1
 ---
 
 {% include git-wiki/components/infobox/item_infobox.html %}
+
+Calcium Chloride is a mineral used to increase calcium levels in the body.
+
+# Function
+Calcium chloride is used to supplement calcium lost from bleeding and during blood transfusion.
+
+Calcium chloride is administered intravenously with a rapid onset, short peak and moderate duration.
+
+Calcium chloride should not be administered intramuscularly.
+
+# Usage
+{% include git-wiki/components/template/action_note.html name="Use Syringe" bodypart="Torso and Limbs" category="medication" %}
+{% include git-wiki/components/template/action_note.html name="Push Calcium Chloride" bodypart="Torso and Limbs" category="medication" %}
+
+Medications require a {% include hl.html t="Syringe" i="/wiki/image/syringe_5.png" %} to be able to be drawn and administered.
+
+IV access is achieved with IV Catheters or IO devices.
+
+## Dosing
+Push 1g IV after first unit (500ml), then 1g IV after every 4 units of blood.
+
+## Effects
+{% include git-wiki/components/template/section_med_effects.html %}
+
+#### Potential Complications
+- Tachycardia
+- Cardiac Arrest
+
+## Indications
+- Blood Transfusion
+
+## Contraindications
+- Ventricular Fibrillation
+
+# Real Life Notes
+- [Hypocalcemia (Wikipedia)](https://en.wikipedia.org/wiki/Hypocalcemia)
+- [Hemorrhagic Shock Fluid Resuscitation in TFC (TCCC.org.ua)](https://tccc.org.ua/en/guide/module-11-hemorrhagic-shock-fluid-resuscitation-in-tactical-field-care-tfc-cmc)
