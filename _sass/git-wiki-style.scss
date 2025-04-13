@@ -401,6 +401,8 @@ ul#results-container {
   background-color: #0F0F0F;
 }
 
+// fixy fixy
+
 #git-wiki-content ul {
   margin-bottom: 0;
 };
@@ -475,6 +477,28 @@ ul#results-container {
   text-align: left;
 }
 
+pre,
+code {
+  font-family: "Courier New";
+  color: white;
+  background-color: black;
+  padding: 5px;
+}
+
+.hide-link:hover {
+  text-decoration: none;
+}
+
+// Sidebar Quick Access
+
+.git-wiki-quickaccess > ul {
+  padding-left: 20px;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+// Table Of Contents
+
 .tocbox {
   padding: 8px;
   background-color: #1e1e1e;
@@ -528,17 +552,7 @@ ul#results-container {
   margin-bottom: 0px;
 }
 
-pre,
-code {
-  font-family: "Courier New";
-  color: white;
-  background-color: black;
-  padding: 5px;
-}
-
-.hide-link:hover {
-  text-decoration: none;
-}
+// Infobox
 
 table.infobox {
   float: right;
