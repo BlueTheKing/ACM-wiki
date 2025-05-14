@@ -1,7 +1,7 @@
 ---
 title: Dimercaprol
 permalink: /en/Dimercaprol
-published: true
+published: false
 
 page_category:
 - item

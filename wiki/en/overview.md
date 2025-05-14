@@ -70,6 +70,22 @@ After going unconscious the airway will almost immediately become susceptible to
 
 Make sure all wounds on the head are not bleeding to prevent any complications.
 
+## Airway Inflammation
+{% include git-wiki/components/template/link_note.html text="Also see: [CBRN](#cbrn)" %}
+When exposed to corrosive chemicals the airway may become inflamed, narrowing the opening and impacting breathing ability.
+
+Severe inflammation may block the airway entirely causing respiratory arrest and preventing insertion of certain airway adjuncts.
+
+Significant airway inflammation requires a surgical airway to allow breathing.
+
+## Airway Spasm
+{% include git-wiki/components/template/link_note.html text="Also see: [CBRN](#cbrn)" %}
+When exposed to nerve agents that cause seizure activity the airway may also be impacted.
+
+An active airway spasm will cause respiratory arrest, potentially making mechanical ventilation ineffective.
+
+Airway spasm managment includes administration of nerve agent antidote and anticonvulsant medication, a surgical airway may also be necessary.
+
 ## Airway Management
 #### Manual Maneuvers
 {:.no_toc}
@@ -89,29 +105,37 @@ Recovery Position
 
 #### Airway Adjuncts
 {:.no_toc}
-Guedel Tube (OPA)
+{% include hl.html t="Guedel Tube" i="/wiki/image/opa.png" %} (OPA)
 - Keeps airway open
 - Requires airway to be clear of obstructions
 - Consumable
 
-NPA
+{% include hl.html t="NPA" i="/wiki/image/npa.png" %}
 - Keeps airway open
 - Requires airway to be clear of obstructions
 - Consumable
 
-i-Gel
+{% include hl.html t="i-gel" i="/wiki/image/igel.png" %}
 - Keeps airway open
 - Manages airway collapse and prevents vomit related obstructions
 - Requires airway to be clear of obstructions
 - Consumable
 
+#### Advanced Airway
+{:.no_toc}
+{% include hl.html t="Surgical Airway" %}
+- Keeps airway open
+- Prevents airway compromise from collapse, obstruction, inflammation, or airway spasm
+- Most invasive
+- Requires consumable {% include hl.html t="CricKit" i="/wiki/image/kit_cric.png" %}
+
 #### Devices
 {:.no_toc}
-Emergency Disposable Suction Bag
+{% include hl.html t="Emergency Disposable Suction Bag" i="/wiki/image/suctionbag.png" %}
 - Clears all airway obstructions
 - Consumable
 
-ACCUVAC
+{% include hl.html t="ACCUVAC" i="/wiki/image/accuvac.png" %}
 - Clears all airway obstructions
 - Bulky
 
@@ -427,7 +451,7 @@ Syringes
         <td>+</td>
         <td></td>
     </tr>
-    <tr>
+    <!--<tr>
         <td>Dimercaprol</td>
         <td class="medication-table">Treating lewisite exposure</td>
         <td>IM</td>
@@ -441,7 +465,7 @@ Syringes
         <td>+</td>
         <td></td>
         <td></td>
-    </tr>
+    </tr>-->
 </table>
 
 ### Other
@@ -902,6 +926,132 @@ The AED can be used in AED mode in which it will automatically analyze and shock
 
 ROSC chance is based on CPR consistency, medication, recent shocks, patient blood volume and the medic's traits.
 
+# Disability
+
+## Fracture Management
+Fractures are caused by velocity and crush wounds on the limbs, fractured legs will cause limping and fractured arms will increase weapon sway.
+
+### Check For Fracture
+Diagnose action usable on injured limbs of patients to determine injury severity and if it is fractured.
+
+{:.no_toc}
+- "Patient has no substantial damage on limb" - Limb is undamaged
+- "Patient limb is bruised" - Limb is bruised
+- "Patient has severe bruising on limb" - Limb has mild fracture
+- "Patient has swelling on limb" - Limb has severe fracture
+- "Patient has significant swelling on limb" - Limb has complex fracture
+- "Patient has splint applied to limb" - Limb has splint already applied
+- "Fracture realignment performed" - Fracture realignment was already performed on limb
+
+### Management
+Fracture realignment can be performed on damaged limbs that are suspected to be fractured, consider IM lidocaine to prevent pain.
+- Applying a splint after fracture realignment will allow the casualty to sprint
+- Applying a splint without realignment will only allow the casualty to jog.
+
+<br>
+Depending on fracture severity the fracture may deteriorate from further damage or over time, complex fractures cannot be managed in field and will require evacuation to fully treat.
+
+# CBRN
+<small>(Chemical, Biological, Radiological, and Nuclear)</small>
+
+## Chemical Agents
+Chemical Weapon Agents (CWA) are chemicals with toxic properties designed to incapacitate, injure and kill.
+
+### CS Gas
+CS Gas is a tear agent, it is deployed as a faint grey gas from CS Grenades, 40mm CS Grenade Shells or mortar rounds.
+
+It is absorbed by inhalation, and eyes.
+
+#### Effects
+{:.no_toc}
+- Immediate: Coughing, pain
+- Moderate: Blindness
+- Prolonged: Difficulty breathing
+
+
+All effects can be prevented with the use of a gas mask.
+
+#### Exposure Management
+{:.no_toc}
+- Pain caused by exposure can be managed by most painkillers
+- Blindness caused by exposure can be managed by washing the patient's eyes with water
+
+### Chlorine Gas
+Chlorine Gas is a pulmonary agent, it is deployed as a bright yellow gas from mortar rounds, it may also be released from chemical IEDs.
+
+It is absorbed by inhalation and the skin.
+
+#### Effects
+{:.no_toc}
+- Immediate: Coughing, pain, choking
+- Moderate: Airway inflammation, blindness
+- Prolonged: Unconsciousness, respiratory arrest, death
+
+
+Inhalation can be prevented with the use of a gas mask.
+
+Skin exposure can be prevented with the use of a CBRN suit.
+
+#### Exposure Management
+{:.no_toc}
+- Pain caused by exposure can be managed by most painkillers
+- Blindness caused by mild exposure can be managed by washing the patient's eyes with water
+- Severe airway inflammation requires a surgical airway to re-establish airway access
+
+### Sarin Gas
+Sarin Gas is a nerve agent, it is deployed as a colorless gas from mortar rounds, it may also be released from chemical IEDs.
+
+It is absorbed by inhalation and the skin.
+
+#### Effects
+{:.no_toc}
+- Immediate: Coughing, pain
+- Moderate: Muscle spasms
+- Prolonged: Unconsciousness, airway spasm, respiratory arrest, death
+
+
+Inhalation can be prevented with the use of a gas mask.
+
+Skin exposure can be prevented with the use of a CBRN suit.
+
+#### Exposure Management
+{:.no_toc}
+- Effects can be mitigated with Atropine administration, or ATNA Autoinjectors
+- Seizures are managed with anticonvulsant medication
+- Airway spasms require a surgical airway to rapidly re-establish airway access
+
+### Lewisite
+Lewisite is a blister agent, it is deployed as a colorless gas from mortar rounds, it may also be released from chemical IEDs.
+
+#### Effects
+{:.no_toc}
+- Immediate: Coughing, pain, chemical burns
+- Moderate: Blindness
+- Prolonged: Unconsciousness, airway inflammation, respiratory arrest, shock, death
+
+
+Inhalation can be prevented with the use of a gas mask.
+
+Skin exposure can be prevented with the use of a CBRN suit.
+
+#### Exposure Management
+{:.no_toc}
+- Shock caused by lewisite will require fluid administration
+- Severe airway inflammation requires a surgical airway to re-establish airway access
+
+## Protection
+Personal Protective Equipment (PPE) includes gas masks and CBRN suits.
+
+By default all vanilla arma gas masks and CBRN suits are defined as such, custom ones will need to be added in the settings.
+
+Gas masks come with filters, the filters get used up if exposed to a hazard agent, they may be replaced at will.
+<br><br>
+Additionally vehicles may be defined as sealed or overpressured in the settings.
+
+- Overpressured vehicles (designated CBRN vehicles, or sometimes IFVs and tanks), are vehicles that have the capability to cause overpressure in the cabin, preventing any hazardous agents from getting inside
+- Sealed vehicles (certain MRAPs, APCs, IFVs, tanks), are vehicles that are sealed and don't let hazardous agents inside, but if the crew opens any doors, is turned out or leaves the vehicle they are no longer protected and the cabin itself may become contaminated
+- Unprotected vehicles (open-top, bikes, civilian vehicles), have no protection and its occupants will be exposed to hazardous agents without proper PPE
+
 # Evacuation
 
 The Evacuation addon allows reinforcement of player casualties, lowering the time infantry players spend unconscious without impacting medical gameplay.
@@ -921,7 +1071,6 @@ To be able to convert a player casualty these requirements need to be met:
 - Casualty must be unconscious
 - Casualty must be alive
 - Casualty must not be bleeding externally
-- Casualty must have less than 2.4L of blood loss
 - Casualty must be in a medical facility/vehicle, if required
 - The medic must have the correct medic trait, if required
 - Casualty must have Ertapenem administered, if required
@@ -1057,8 +1206,20 @@ Signs:
 {:.no_toc}
 ### Fracture Management
 {:.no_toc}
-- Universal Splint -> Single use
-- SAM Splint -> Wrap with Elastic Wrap
+
+#### Check For Fracture
+{:.no_toc}
+- Mild -> Continue
+- Severe -> Continue
+- Complex -> Evacuate casualty to fully treat
+
+#### Management
+{:.no_toc}
+- Administer IM lidocaine in advance of realignment
+- Perform fracture realignment
+- Apply SAM Splint
+  - Check casualty mobility -> If still limited retry realignment and reapply splint
+- Wrap SAM Splint
 
 ### Pain Management
 {:.no_toc}

@@ -1,1 +1,1 @@
-<em style="display:block;font-size:13px;margin:-3px 0 0 10px;">{{ include.text }}</em>
+<em style="display:block;font-size:13px;margin:-3px 0 0 10px;">{{ include.text }}{% if include.link %} <a href="{{ include.link | relative_url }}">{{ include.linktext }}</a>{% endif %}</em>
