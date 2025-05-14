@@ -51,7 +51,7 @@ Once established the surgical airway will not be able to be removed, and the pat
 ## Contraindications
 - N/A
 
-# Real Life Notes
+# External Links
 - [Cricothyrotomy (Wikipedia)](https://en.wikipedia.org/wiki/Cricothyrotomy)
 - [Standard Open Cricothyroidotomy (TCCC.org.ua)](https://tccc.org.ua/en/guide/standard-open-cricothyroidotomy)
 - [Emergency Cricothyroidotomy: Cric-Key (TCCC.org.ua)](https://tccc.org.ua/en/guide/emergency-cricothyroidotomy-cric-key)

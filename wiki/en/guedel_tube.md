@@ -59,5 +59,5 @@ The Guedel Tube can be removed at any point, and will be automatically removed u
 - Airway obstruction
 - Severe airway collapse
 
-# Real Life Notes
+# External Links
 - [Oropharyngeal Airway (Wikipedia)](https://en.wikipedia.org/wiki/Oropharyngeal_airway)

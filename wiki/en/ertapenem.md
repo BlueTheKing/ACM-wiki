@@ -67,6 +67,6 @@ Medications can be administered intramuscularly with just a syringe.
 ## Contraindications
 - N/A
 
-# Real Life Notes
+# External Links
 - [Ertapenem (Wikipedia)](https://en.wikipedia.org/wiki/Ertapenem)
 - [Antibiotics Administration (TCCC.org.ua)](https://tccc.org.ua/en/guide/module-16-antibiotics-administration-cmc)

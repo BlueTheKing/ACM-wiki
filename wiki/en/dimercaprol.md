@@ -75,6 +75,6 @@ Inject 3mg/kg IM, up to 5mg/kg
 ## Contraindications
 - N/A
 
-# Real Life Notes
+# External Links
 - [Dimercaprol (Wikipedia)](https://en.wikipedia.org/wiki/Dimercaprol)
 - [CBRN Injury Response (Part 2) - Treatment of Vesicant or Blister Agents (TCCC.org.ua)](https://tccc.org.ua/en/guide/cbrn-injury-part-2-cpg#n36)

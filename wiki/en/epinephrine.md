@@ -77,5 +77,5 @@ Push 1mg IV every 5 minutes during cardiac arrest
 ## Contraindications
 - N/A
 
-# Real Life Notes
+# External Links
 - [Epinephrine (Wikipedia)](https://en.wikipedia.org/wiki/Epinephrine_(medication))

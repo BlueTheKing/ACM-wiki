@@ -67,7 +67,7 @@ ATNAA is administered intramuscularly with a quick onset, moderate peak and long
 ## Contraindications
 - Tachycardia (NOT from nerve agent exposure)
 
-# Real Life Notes
+# External Links
 - [ATNAA (Wikipedia)](https://en.wikipedia.org/wiki/ATNAA)
 - [CBRN Injury Response (Part 2) - Atropine (TCCC.org.ua)](https://tccc.org.ua/en/guide/cbrn-injury-part-2-cpg#n19)
 - [DuoDote® Auto-Injector Administration Instructions (YouTube)](https://www.youtube.com/watch?v=hWvhzTgYXRU)

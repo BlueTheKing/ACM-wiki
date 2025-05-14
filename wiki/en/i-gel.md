@@ -56,5 +56,5 @@ The i-gel can be removed at any point, and will be automatically removed upon th
 ## Contraindications
 - Severe airway inflammation
 
-# Real Life Notes
+# External Links
 - [i-gel Info (intersurgical.com)](https://www.intersurgical.com/info/igel-emergency-medicine)

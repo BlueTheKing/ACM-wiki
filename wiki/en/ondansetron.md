@@ -79,6 +79,6 @@ Push or inject 4mg, up to 8mg
 ## Contraindications
 - Bradycardia
 
-# Real Life Notes
+# External Links
 - [Ondansetron (Wikipedia)](https://en.wikipedia.org/wiki/Ondansetron)
 - [Pain Medication (Analgesia) - Ondansetron Administration (TCCC.org.ua)](https://tccc.org.ua/en/guide/module-15-pain-medication-analgesia-cmc#n10)

@@ -70,6 +70,6 @@ Push 1-2g IV, repeat every 10-15 minutes for continued bleeding
 ## Contraindications
 - N/A
 
-# Real Life Notes
+# External Links
 - [Tranexamic Acid (Wikipedia)](https://en.wikipedia.org/wiki/Tranexamic_acid)
 - [Shock Recognition and Management - Tranexamic Acid (TXA) Administration (TCCC.org.ua)](https://tccc.org.ua/en/guide/module-10-shock-recognition-and-management-cmc#n13)

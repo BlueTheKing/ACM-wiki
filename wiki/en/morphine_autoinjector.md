@@ -73,6 +73,6 @@ Single injection
 - Chest Injury
 - Impaired Breathing Ability
 
-# Real Life Notes
+# External Links
 - [Morphine (Wikipedia)](https://en.wikipedia.org/wiki/Morphine)
 - [TFC Pain (TCCC.org.ua)](https://tccc.org.ua/en/guide/tfc-pain)

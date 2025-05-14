@@ -84,6 +84,6 @@ ANALGESIA:<br>
 ## Contraindications
 - N/A
 
-# Real Life Notes
+# External Links
 - [Ketamine (Wikipedia)](https://en.wikipedia.org/wiki/Ketamine)
 - [Pain Medication (Analgesia) - Ketamine Administration (TCCC.org.ua)](https://tccc.org.ua/en/guide/module-15-pain-medication-analgesia-cmc#n11)

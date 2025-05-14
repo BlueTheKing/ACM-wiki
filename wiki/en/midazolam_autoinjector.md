@@ -64,5 +64,5 @@ Single injection
 ## Contraindications
 - N/A
 
-# Real Life Notes
+# External Links
 - [Midazolam (Wikipedia)](https://en.wikipedia.org/wiki/Midazolam)

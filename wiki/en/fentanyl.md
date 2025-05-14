@@ -87,5 +87,5 @@ Range is based on required analgesia<br>
 - Chest Injury
 - Impaired Breathing Ability
 
-# Real Life Notes
+# External Links
 - [Fentanyl (Wikipedia)](https://en.wikipedia.org/wiki/Fentanyl)

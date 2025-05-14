@@ -72,5 +72,5 @@ Push 0.25-0.5mg/kg IV, depending on required effect
 - Bradycardia
 - Hypotension
 
-# Real Life Notes
+# External Links
 - [Esmolol (Wikipedia)](https://en.wikipedia.org/wiki/Esmolol)

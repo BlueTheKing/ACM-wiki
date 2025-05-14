@@ -87,5 +87,5 @@ Medications can be administered intramuscularly with just a syringe.
 ## Contraindications
 - N/A
 
-# Real Life Notes
+# External Links
 - [Lidocaine (Wikipedia)](https://en.wikipedia.org/wiki/Lidocaine)

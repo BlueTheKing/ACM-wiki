@@ -72,5 +72,5 @@ IV access is achieved with IV Catheters or IO devices.
 ## Contraindications
 - Bradycardia
 
-# Real Life Notes
+# External Links
 - [Amiodarone (Wikipedia)](https://en.wikipedia.org/wiki/Amiodarone)

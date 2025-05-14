@@ -81,6 +81,6 @@ Medications can be administered intramuscularly with just a syringe.
 ## Contraindications
 - Tachycardia (NOT from nerve agent exposure)
 
-# Real Life Notes
+# External Links
 - [Atropine (Wikipedia)](https://en.wikipedia.org/wiki/Atropine)
 - [CBRN Injury Response (Part 2) - Atropine (TCCC.org.ua)](https://tccc.org.ua/en/guide/cbrn-injury-part-2-cpg#n19)

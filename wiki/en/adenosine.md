@@ -69,5 +69,5 @@ IV access is achieved with IV Catheters or IO devices.
 ## Contraindications
 - N/A
 
-# Real Life Notes
+# External Links
 - [Adenosine (Wikipedia)](https://en.wikipedia.org/wiki/Adenosine)

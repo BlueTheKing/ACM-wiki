@@ -74,6 +74,6 @@ Push 1g IV after first unit (500ml), then 1g IV after every 4 units of blood.
 ## Contraindications
 - Ventricular Fibrillation
 
-# Real Life Notes
+# External Links
 - [Hypocalcemia (Wikipedia)](https://en.wikipedia.org/wiki/Hypocalcemia)
 - [Hemorrhagic Shock Fluid Resuscitation in TFC (TCCC.org.ua)](https://tccc.org.ua/en/guide/module-11-hemorrhagic-shock-fluid-resuscitation-in-tactical-field-care-tfc-cmc)

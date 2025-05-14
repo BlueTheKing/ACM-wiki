@@ -75,6 +75,6 @@ One lozenge
 - Chest Injury
 - Impaired Breathing Ability
 
-# Real Life Notes
+# External Links
 - [Fentanyl (Wikipedia)](https://en.wikipedia.org/wiki/Fentanyl)
 - [Pain Medication (Analgesia) - OTFC (TCCC.org.ua)](https://tccc.org.ua/en/guide/module-15-pain-medication-analgesia-cmc)

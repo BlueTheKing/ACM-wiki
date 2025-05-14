@@ -55,6 +55,6 @@ The NPA can be removed at any point, and will be automatically removed upon the 
 - Airway obstruction
 - Severe airway collapse
 
-# Real Life Notes
+# External Links
 - [Nasopharyngeal Airway (Wikipedia)](https://en.wikipedia.org/wiki/Nasopharyngeal_airway)
 - [NPA Insertion (TCCC.org.ua)](https://tccc.org.ua/en/guide/nasopharyngeal-airway-insertion)
