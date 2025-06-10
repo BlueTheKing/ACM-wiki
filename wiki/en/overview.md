@@ -1163,8 +1163,10 @@ Listen for diminished or lack of breathing sounds on one side of the chest
 #### CPR:
 {:.no_toc}
 - 2 minutes of CPR, then check for pulse, repeat
-- Single medic or no i-gel -> 30 compressions (~18s), followed by 2 BVM breaths
-- 2 medics -> continuous CPR and BVM
+    - For casualties with oxygen deprivation, also use BVM
+        - Single medic or no i-gel -> 30 compressions (~18s), followed by 2 BVM breaths
+        - 2 medics -> continuous CPR and BVM
+    - If there is no oxygen deprivation, perform continous CPR
 
 #### AED:
 {:.no_toc}
@@ -1180,8 +1182,10 @@ Analyze rhythm manually or use AED Mode
     - No Shock -> CPR
 - CPR
     - Perform CPR for 2 minutes (or until AED signals)
-        - Single medic or no i-gel -> 30 compressions (~18s), followed by 2 BVM breaths
-        - 2 medics -> continuous CPR and BVM
+        - For casualties with oxygen deprivation, also use BVM
+            - Single medic or no i-gel -> 30 compressions (~18s), followed by 2 BVM breaths
+            - 2 medics -> continuous CPR and BVM
+        - If there is no oxygen deprivation, perform continous CPR
     - After 2 minutes re-analyze in AED Mode or manually, repeat
 
 #### ROSC:
