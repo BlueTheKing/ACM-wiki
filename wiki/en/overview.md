@@ -281,7 +281,7 @@ Syringes
         <td>--</td>
         <td>--</td>
         <td>--</td>
-        <td>VERY STRONG</td>
+        <td>STRONG</td>
     </tr>
     <tr>
         <td>Fentanyl</td>
@@ -498,7 +498,7 @@ Syringes
         <td>--</td>
         <td>--</td>
         <td>--</td>
-        <td>VERY STRONG</td>
+        <td>STRONG</td>
     </tr>
     <tr>
         <td>Fentanyl Lozenge (OTFC)</td>

@@ -40,7 +40,7 @@ infobox_med_effect_hr: -2
 infobox_med_effect_bp: -2
 infobox_med_effect_rr: -2
 
-infobox_med_pain: "VERY STRONG"
+infobox_med_pain: "STRONG"
 ---
 
 {% include git-wiki/components/infobox/item_infobox.html %}
