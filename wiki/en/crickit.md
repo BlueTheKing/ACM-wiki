@@ -38,8 +38,7 @@ The CricKit is a single use kit used to establish a {% include hl.html t="Surgic
 
 The kit is consumed upon completing, cancelling or failing to establish a surgical airway.
 - If a surgical airway is cancelled before an incision is made then the crickit is returned instead
-
-Once established the surgical airway will not be able to be removed, and the patient will stay unconscious.<br><br>
+<br>
 - **{% include hl.html t="Head Tilt-Chin Lift" %} -** If a head tilt-chin lift is performed it will be cancelled upon starting to establish a surgical airway.
 - **Recovery Position -** If the patient is placed into the recovery position establishing a surgical airway will cancel the recovery position.
 - **{% include hl.html t="CPR" %} and {% include hl.html t="BVM" i="/wiki/image/bvm.png" %} -** A surgical airway allows performing simultaneous CPR and BVM rescue breaths

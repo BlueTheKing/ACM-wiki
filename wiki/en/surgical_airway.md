@@ -11,7 +11,7 @@ page_category:
 - airway_management
 ---
 
-Surgical Airway (also known as Cricothyrotomy, or just cric) is a emergency procedure used to secure an otherwise unusable airway.
+Surgical Airway (Cricothyrotomy, or just cric) is an emergency procedure used to secure an otherwise unusable airway.
 
 The surgical airway is performed by making an incision on the cricothyroid membrane and inserting a tracheostomy tube, bypassing the upper airway.
 
@@ -23,6 +23,8 @@ A surgical airway can be established if the medic has a {% include hl.html t="Cr
 The surgical airway may be cancelled if no incisions are made, after the first incision the CricKit will be consumed even if the action is cancelled.
 
 Open incisions will cause the patient to continually bleed until they are stitched after completion, if the action fails or is cancelled with open incisions they will need to be bandaged and stitched instead.
+
+Once established the surgical airway will not be able to be removed, and the patient will stay unconscious.
 
 ## Indications
 Severe airway inflammation and unmanaged airway spasm block the airway, prevent insertion of another advanced airway or make mechanical ventilation ineffective.
@@ -49,7 +51,7 @@ A patient with these conditions will not be able to breathe, the surgical airway
   - Used to secure cric-key to the neck of the patient
 
 ## Procedure Steps
-Surgical airway is performed by palpating for the <span style="color:#60DCFF;">cricothyroid membrane</span>, making a vertical and horizontal incision, then inserting and securing a cric-key, after completion the incision will also need to be stitched to prevent bleeding.
+Surgical airway is performed by palpating for the <span style="color:#60DCFF;">cricothyroid membrane</span>, making a vertical and horizontal incision, then inserting and securing the cric-key, after completion the incision will also need to be stitched to prevent bleeding.
 
 Palpating is performed by **right-clicking** with no equipment selected.
 
