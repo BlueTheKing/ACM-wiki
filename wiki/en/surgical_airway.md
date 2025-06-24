@@ -46,14 +46,14 @@ A patient with these conditions will not be able to breathe, the surgical airway
   - Has a stylet that needs to be removed after insertion
 - <img src="{{ '/wiki/image/surgical_airway/syringe.png' | relative_url }}" height="60"> Syringe
   - Used to inflate cric-key pressure cuff to seal the airway
-  - Disarded after cuff is inflated
+  - Discarded after cuff is inflated
 - <img src="{{ '/wiki/image/surgical_airway/strap.png' | relative_url }}" height="60"> Neck Strap
   - Used to secure cric-key to the neck of the patient
 
 ## Procedure Steps
 Surgical airway is performed by palpating for the <span style="color:#60DCFF;">cricothyroid membrane</span>, making a vertical and horizontal incision, then inserting and securing the cric-key, after completion the incision will also need to be stitched to prevent bleeding.
 
-Palpating is performed by **right-clicking** with no equipment selected.
+**Palpating** is performed by **right-clicking** with no equipment selected.
 
 The **scalpel** can be rotated by **right-clicking**.
 
@@ -67,7 +67,7 @@ The **scalpel** can be rotated by **right-clicking**.
 4. Return the **scalpel**
 
 #### Horizontal Incision
-1. Palpate over the incision over the <span style="color:#FF1E7C;">cricothyroid membrane area</span> to confirm the <span style="color:#60DCFF;">cricothyroid membrane</span> location and expand the incision
+1. **Palpate** over the incision over the <span style="color:#FF1E7C;">cricothyroid membrane area</span> to confirm the <span style="color:#60DCFF;">cricothyroid membrane</span> location and expand the incision
 2. Select the **scalpel**, and prepare for a **horizontal** incision
 3. Cut horizontally along the <span style="color:#60DCFF;">cricothyroid membrane</span>
 4. Discard the **scalpel**
