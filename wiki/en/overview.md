@@ -25,7 +25,7 @@ Large surface bandage meant for covering many wounds at once, due to its size it
 
 **Elastic Wrap**
 
-Elastic Wraps are used to wrap already bandaged or clotted wounds to prevent the bandages from falling off/wounds reopening, they cannot bandage bleeding wounds on their own.
+Elastic Wraps are used to wrap already bandaged or clotted wounds to lower the chance of them falling off/wounds reopening, they cannot bandage bleeding wounds on their own.
 
 Wraps can also be used to treat bruises, and to stabilize SAM Splints.
 
