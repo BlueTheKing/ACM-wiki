@@ -58,8 +58,7 @@ Surgical airway is performed by palpating for the <span style="color:#60DCFF;">c
 The **scalpel** can be rotated by **right-clicking**.
 
 #### Vertical Incision
-{% include img.html i="/wiki/image/surgical_airway/incision_horizontal.png" s="20" t="Horizontal incision" %}
-{% include img.html i="/wiki/image/surgical_airway/incision_vertical.png" s="20" t="Vertical incision" %}
+{% include video.html v="/wiki/image/surgical_airway/surgical_airway.webm" type="video/webm" gif="true" s="30" t="Performing Surgical Airway" %}
 
 1. Locate <span style="color:#FFCA1C;">thyroid cartilage ridge</span>, and locate the <span style="color:#FF1E7C;">cricothyroid membrane area</span>
 2. Select the **scalpel**
