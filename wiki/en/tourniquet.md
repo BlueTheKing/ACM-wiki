@@ -22,7 +22,7 @@ infobox_item_nonmedication: true
 infobox_item_type: "Hemorrhage Control Device"
 infobox_item_weight: "0.05kg | 0.1lb"
 
-infobox_item_classname: "ACM_ElasticWrap"
+infobox_item_classname: "ACE_tourniquet"
 ---
 
 {% include git-wiki/components/infobox/item_infobox.html %}
