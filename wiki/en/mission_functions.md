@@ -27,7 +27,7 @@ The Reinforce Point defines where converted players will be teleported to.
 <big>**Module Attributes**</big><br>
 **Player Side** - Define which faction the reinforce point is intended for
 
-{% include video.html v="/wiki/image/mission_modules/reinforce_point.webm" type="video/webm" gif="true" s="50" f="center" t="Evacuation Point Module" %}
+{% include video.html v="/wiki/image/mission_modules/reinforce_point.webm" type="video/webm" gif="true" s="50" f="center" t="Reinforce Point Module" %}
 
 #### Evacuation Point
 The Evacuation Point controls what objects can be used to evacuate converted casualties.
@@ -41,7 +41,7 @@ The Evacuation Point controls what objects can be used to evacuate converted cas
 **Interaction Distance** - Default: `5`<br>
 **Interaction Position** - Default: `[0,0,0]`
 
-{% include video.html v="/wiki/image/mission_modules/evacuation_point.webm" type="video/webm" gif="true" s="50" f="center" t="Reinforce Point Module" %}
+{% include video.html v="/wiki/image/mission_modules/evacuation_point.webm" type="video/webm" gif="true" s="50" f="center" t="Evacuation Point Module" %}
 
 ### Enabling respawn ticket subtraction in mission file
 {:.no_toc}
