@@ -105,7 +105,7 @@ Recovery Position
 
 #### Airway Adjuncts
 {:.no_toc}
-{% include hl.html t="Guedel Tube" i="/wiki/image/opa.png" %} (OPA)
+{% include hl.html t="OPA" i="/wiki/image/opa.png" %}
 - Keeps airway open
 - Requires airway to be clear of obstructions
 - Consumable
