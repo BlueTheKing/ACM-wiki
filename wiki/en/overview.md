@@ -1097,13 +1097,12 @@ Carried casualties can be evacuated on the defined interaction object, this will
 ## Airway
 {:.no_toc}
 **Check Airway:**
-- Obstruction:
-- Mild Obstruction -> Head turning, or suction
-- Severe Obstruction -> Suction required
-
-**Collapse:**
-- None-mild -> Use NPA/OPA, Head Tilt-Chin Lift, Recovery Position
-- Mild-Severe -> i-gel, Head Tilt-Chin Lift, Recovery Position
+- **Obstruction:**
+    - Mild Obstruction -> Head turning, or suction
+    - Severe Obstruction -> Suction required
+- **Collapse:**
+    - None-mild -> Use NPA/OPA, Head Tilt-Chin Lift, Recovery Position
+    - Mild-Severe -> i-gel, Head Tilt-Chin Lift, Recovery Position
 
 ## Breathing
 {:.no_toc}
@@ -1166,7 +1165,7 @@ Listen for diminished or lack of breathing sounds on one side of the chest
     - For casualties with oxygen deprivation, also use BVM
         - Single medic or no i-gel -> 30 compressions (~18s), followed by 2 BVM breaths
         - 2 medics -> continuous CPR and BVM
-    - If there is no oxygen deprivation, perform continous CPR
+    - If there is no oxygen deprivation, perform continuous CPR
 
 #### AED:
 {:.no_toc}
@@ -1185,7 +1184,7 @@ Analyze rhythm manually or use AED Mode
         - For casualties with oxygen deprivation, also use BVM
             - Single medic or no i-gel -> 30 compressions (~18s), followed by 2 BVM breaths
             - 2 medics -> continuous CPR and BVM
-        - If there is no oxygen deprivation, perform continous CPR
+        - If there is no oxygen deprivation, perform continuous CPR
     - After 2 minutes re-analyze in AED Mode or manually, repeat
 
 #### ROSC:
